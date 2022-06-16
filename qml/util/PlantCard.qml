@@ -5,7 +5,6 @@ import Ubuntu.Content 1.1
 import QtQuick.Controls 2.5 as QC
 
 import "../util"
-import "../colors"
 
 Item {
    id: plantCard

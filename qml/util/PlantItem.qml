@@ -4,9 +4,7 @@ import QtQuick.Layouts 1.3
 import Ubuntu.Content 1.1
 import QtGraphicalEffects 1.12
 
-import "../notify"
 import "../util"
-import "../colors"
 
 Rectangle {
    id: item

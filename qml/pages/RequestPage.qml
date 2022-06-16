@@ -6,9 +6,7 @@ import Qt.labs.platform 1.1
 import Ubuntu.Content 1.1
 import QtGraphicalEffects 1.12
 
-import "../notify"
 import "../util"
-import "../colors"
 
 import PlantsModel 1.0
 
@@ -63,7 +61,7 @@ Page {
       anchors.horizontalCenter: parent.horizontalCenter
 
       text: i18n.tr("Identify")
-      enabled: imageModel.count > 0
+      enabled: imageModel.count > 1
       onClicked: {
          var request = [];
 

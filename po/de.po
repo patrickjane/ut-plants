@@ -1,0 +1,309 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the plants.s710 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plants.s710\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-16 09:05+0000\n"
+"PO-Revision-Date: 2022-06-16 13:23+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1\n"
+
+#: ../qml/pages/ImportPage.qml:13
+msgid "Load image"
+msgstr "Bild laden"
+
+#: ../qml/pages/MainPage.qml:22 Plants.desktop.in.h:1
+msgid "Plants"
+msgstr "Pflanzen"
+
+#: ../qml/pages/MainPage.qml:51
+msgid "Identification failed"
+msgstr "Identifizierung fehlgeschlagen"
+
+#: ../qml/pages/MainPage.qml:52
+msgid "Failed to send identification request to Pl@ntNet (%1)."
+msgstr "Identifikationsanfrage an Pl@ntNet (%1) konnte nicht gesendet werden."
+
+#: ../qml/pages/MainPage.qml:65 ../qml/util/Dialogs.qml:98
+msgid "Failed to init storage directory"
+msgstr "Speicherverzeichnis konnte nicht initialisiert werden"
+
+#: ../qml/pages/MainPage.qml:66 ../qml/util/Dialogs.qml:99
+msgid "Storage directory could not be initialized (%1)."
+msgstr "Das Speicherverzeichnis konnte nicht initialisiert werden (%1)."
+
+#: ../qml/pages/MainPage.qml:89
+msgid "No plants identified yet"
+msgstr "Noch keine Pflanzen identifiziert"
+
+#: ../qml/pages/MainPage.qml:99 ../qml/pages/RequestPage.qml:20
+msgid "New identification"
+msgstr "Neue Identifizierung"
+
+#: ../qml/pages/MainPage.qml:103
+msgid "API Key missing"
+msgstr "API-Schlüssel fehlt"
+
+#: ../qml/pages/MainPage.qml:104
+msgid ""
+"The Pl@ntNet API-Key has not been configured yet. Without this, the app will "
+"not work."
+msgstr ""
+"Der Pl@ntNet API-Key wurde noch nicht konfiguriert. Ohne diesen wird die App "
+"nicht funktionieren."
+
+#: ../qml/pages/MainPage.qml:142
+msgid "Delete plant?"
+msgstr "Pflanze löschen?"
+
+#: ../qml/pages/MainPage.qml:143
+msgid "Shall the plant '%1' be deleted? This operation can not be undone."
+msgstr ""
+"Soll die Pflanze '%1' gelöscht werden? Dieser Vorgang kann nicht rückgängig "
+"gemacht werden."
+
+#: ../qml/pages/MainPage.qml:144
+msgid "Delete"
+msgstr "Löschen"
+
+#: ../qml/pages/MainPage.qml:145 ../qml/util/Dialogs.qml:18
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: ../qml/pages/MainPage.qml:153
+msgid "Deleting plant failed"
+msgstr "Löschung fehlgeschlagen"
+
+#: ../qml/pages/MainPage.qml:154
+msgid "Plant could not be deleted (%1)."
+msgstr "Pflanze konnte nicht gelöscht werden (%1)."
+
+#: ../qml/pages/MainPage.qml:169
+msgid "1 identified plant"
+msgstr "1 identifizierte Pflanze"
+
+#: ../qml/pages/MainPage.qml:170
+msgid "%1 identified plants"
+msgstr "%1 identifizierte Pflanzen"
+
+#: ../qml/pages/PlantPage.qml:19
+msgid "Plant details"
+msgstr "Pflanzendetails"
+
+#: ../qml/pages/RequestPage.qml:38
+msgid ""
+"Add up to 5 images for identification. The images must be of the same plant. "
+"The more images are provided, the better the identification result will be."
+msgstr ""
+"Bis zu 5 Fotos können zur Identifizierung verwendet werden. Die Fotos müssen "
+"von der gleichen Pflanze sein. Je mehr Fotos verwendet werden, desto genauer "
+"wird das Analyseergebnis sein."
+
+#: ../qml/pages/RequestPage.qml:39
+msgid ""
+"Pl@ntNet recommends images with the smaller side larger than 600px and "
+"smaller than 2000px. Ideally a square image zoomed on the organ around "
+"1280x1280px."
+msgstr ""
+"Pl@ntNet empfiehlt Fotos mit der kürzeren Seite mehr als 600px und weniger "
+"als 2000px. Idealerweise ein Quadrat mit Fokus auf die Pflanze von etwa "
+"1280x1280px."
+
+#: ../qml/pages/RequestPage.qml:65
+msgid "Identify"
+msgstr "Identifizieren"
+
+#: ../qml/pages/ResultsPage.qml:22
+msgid "Identification results"
+msgstr "Identifizierungsergebnis"
+
+#: ../qml/pages/ResultsPage.qml:78
+msgid "Saving result failed"
+msgstr "Speichern fehlgeschlagen"
+
+#: ../qml/pages/ResultsPage.qml:79
+msgid "Result could not be saved (%1)."
+msgstr "Ergebnis konnte nicht gespeichert werden (%1)."
+
+#: ../qml/pages/SettingsPage.qml:22
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: ../qml/pages/SettingsPage.qml:45
+msgid "Pl@ntNet API key"
+msgstr "Pl@ntNet API-Schlüssel"
+
+#: ../qml/pages/SettingsPage.qml:60
+msgid ""
+"In order to use the Pl@ntNet plant identification service, it is necessary "
+"to register at their website as developer and obtain an API-Key. This key "
+"needs to be configured within this app.\n"
+"\n"
+"Please visit https://my.plantnet.org/signup and create an account. "
+"Afterwards visit https://my.plantnet.org/account and click the eye-symbol at "
+"the very top (\"my API key\") to show the API-Key. Copy this key and paste "
+"it into the below text input field."
+msgstr ""
+"Um den Pflanzen-Identifizierungsdienst von Pl@ntNet zu nutzen, ist es "
+"notwendig, auf der Webseite von Pl@ntNet ein Entwicklerkonto zu erstellen um "
+"einen API-Schlüssel zu erhalten. Dieser API-Schlüssel muss in der App "
+"hinterlegt werden.\n"
+"\n"
+"Bitte ein Konto auf https://my.plantnet.org/signup erstellen und "
+"anschließend unter https://my.plantnet.org/account ganz oben mit dem \"Augen-"
+"Symbol\" den API-Schlüssel anzeigen lassen. Dieser kann dann in das unten "
+"stehende Eingabefeld kopiert werden."
+
+#: ../qml/pages/SettingsPage.qml:77
+msgid "API-Key:"
+msgstr "API-Schlüssel:"
+
+#: ../qml/pages/SettingsPage.qml:89
+msgid "Enter API-Key"
+msgstr "API-Schlüssel eingeben"
+
+#: ../qml/pages/SettingsPage.qml:97
+msgid "Save"
+msgstr "Speichern"
+
+#: ../qml/util/Dialogs.qml:17 ../qml/util/Dialogs.qml:83
+msgid "Okay"
+msgstr "Okay"
+
+#: ../qml/util/Dialogs.qml:50 ../qml/util/Dialogs.qml:104
+msgid "Close"
+msgstr "Schließen"
+
+#: ../qml/util/Dialogs.qml:70
+msgid "Select plant part"
+msgstr "Pflanzenteil auswählen"
+
+#: ../qml/util/LoadingScreen.qml:37
+msgid "Plant is being identified, please wait."
+msgstr "Pflanze wird identifiziert, bitte warten."
+
+#: ../qml/util/PlantCard.qml:58
+msgid "Name"
+msgstr "Name"
+
+#: ../qml/util/PlantCard.qml:145
+msgid "Common names"
+msgstr "Gebräuchliche Namen"
+
+#: ../qml/util/PlantCard.qml:164
+msgid "Save this result"
+msgstr "Dieses Ergebnis speichern"
+
+#: ../qml/util/PlantItem.qml:55
+msgid "Tap to add new image"
+msgstr "Tippe um Foto hinzuzufügen"
+
+#: ../qml/util/PlantItem.qml:97
+msgid "Organ"
+msgstr "Pflanzenteil"
+
+#: ../qml/util/PlantUtils.qml:10
+msgid "Auto"
+msgstr "Automatisch"
+
+#: ../qml/util/PlantUtils.qml:11
+msgid "Leaf"
+msgstr "Blatt"
+
+#: ../qml/util/PlantUtils.qml:12
+msgid "Flower"
+msgstr "Blüte"
+
+#: ../qml/util/PlantUtils.qml:13
+msgid "Fruit"
+msgstr "Frucht"
+
+#: ../qml/util/PlantUtils.qml:14
+msgid "Bark"
+msgstr "Rinde"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:56
+msgid "No source images in identification result"
+msgstr "Keine Quell-Fotos im Identifizierungsergebnis"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:70
+msgid "Own photo"
+msgstr "Eigenes Foto"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:76
+msgid "Failed to save source images for plant: "
+msgstr "Quell-Fotos der Pflanze konnten nicht speichern:"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:94
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:97
+msgid "Failed to save plant JSON: "
+msgstr "JSON-Datei konnte nicht gespeichert werden:"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:114
+msgid "Failed to open plant JSON: "
+msgstr "JSON-Datei konnte nicht geöffnet werden:"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:119
+msgid "Failed to open plant JSON #2: "
+msgstr "JSON-Datei konnte nicht geöffnet werden #2:"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:136
+msgid "Failed to read plant JSON: "
+msgstr "JSON-Datei konnte nicht gelesen werden:"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:141
+msgid "Unexpected/malformed plant JSON #1"
+msgstr "Unerwartetes/ungültiges JSON-Format #1"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:151
+msgid "Unexpected/malformed plant JSON #2"
+msgstr "Unerwartetes/ungültiges JSON-Format #2"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:170
+msgid "Unexpected/malformed plant JSON #3"
+msgstr "Unerwartetes/ungültiges JSON-Format #3"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:188
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:193
+msgid "Failed to open plant image: "
+msgstr "Pflanzen-Foto konnte nicht geöffnet werden:"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:58
+msgid "Failed to determine writable app data storage location"
+msgstr "Fehler beim Ermitteln des Speicherorts für App-Daten"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:67
+msgid "App data storage location inaccessible"
+msgstr "Zugriff auf App-Datenspeicherort nicht möglich"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:68
+msgid "can't create subfolder:"
+msgstr "Unterordner kann nicht angelegt werden:"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:181
+msgid "Failed to save plant"
+msgstr "Pflanze konnte nicht gespeichert werden"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:205
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:211
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:227
+msgid "Failed to delete plant (plant unknown)"
+msgstr "Pflanze konnte nicht gelöscht werden (Pflanze unbekannt)"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:216
+msgid "Failed to delete plant from storage directory (%1)"
+msgstr "Pflanze konnte nicht aus dem Speicherordner gelöscht werden (%1)"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:232
+msgid "Failed to delete plant image from storage directory (%1)"
+msgstr "Pflanzen-Foto konnte nicht aus dem Speicherordner gelöscht werden (%1)"

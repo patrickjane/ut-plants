@@ -5,7 +5,6 @@ import Qt.labs.platform 1.1
 import Ubuntu.Content 1.1
 import Ubuntu.Components.Popups 1.3
 
-import "./notify"
 import "./util"
 import "./pages"
 
@@ -17,10 +16,6 @@ MainView {
 
    width: units.gu(45)
    height: units.gu(75)
-
-   Notification {
-      notificationId: "mainNotification"
-   }
 
    Text { id: text; font.pointSize: units.gu(1) }
 

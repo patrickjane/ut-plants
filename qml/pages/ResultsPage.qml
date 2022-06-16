@@ -4,9 +4,7 @@ import QtQuick.Layouts 1.3
 import Ubuntu.Content 1.1
 import QtQuick.Controls 2.5 as QC
 
-import "../notify"
 import "../util"
-import "../colors"
 
 import PlantsModel 1.0
 

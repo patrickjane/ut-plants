@@ -6,9 +6,7 @@ import QtGraphicalEffects 1.12
 import QtQuick.Controls 2.5 as QC
 import Qt.labs.settings 1.0
 
-import "../notify"
 import "../util"
-import "../colors"
 
 import PlantsModel 1.0
 
