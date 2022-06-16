@@ -1,0 +1,15 @@
+{
+    "name": "plants.s710",
+    "description": "App for identifying plants through image analyzation",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Plants",
+    "hooks": {
+        "Plants": {
+            "apparmor": "Plants.apparmor",
+            "desktop":  "Plants.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "patrickjane <mg.m@gmx.net>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

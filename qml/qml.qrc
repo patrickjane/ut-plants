@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Main.qml</file>
+        <file>pages/MainPage.qml</file>
+        <file>notify/Notification.qml</file>
+        <file>notify/Notify.qml</file>
+        <file>notify/qmldir</file>
+        <file>colors/Colors.qml</file>
+        <file>colors/qmldir</file>
+        <file>pages/ImportPage.qml</file>
+        <file>pages/RequestPage.qml</file>
+        <file>pages/ResultsPage.qml</file>
+        <file>pages/PlantPage.qml</file>
+        <file>util/Dialogs.qml</file>
+        <file>util/PlantUtils.qml</file>
+        <file>util/PlantCard.qml</file>
+        <file>util/PlantItem.qml</file>
+        <file>util/LoadingScreen.qml</file>
+        <file>util/qmldir</file>
+        <file>pages/SettingsPage.qml</file>
+    </qresource>
+</RCC>

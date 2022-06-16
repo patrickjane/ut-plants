@@ -1,0 +1,5 @@
+build
+.clickable
+*.pro
+*.pro.user
+*.autosave
