@@ -18,6 +18,12 @@ MainView {
    height: units.gu(75)
 
    Text { id: text; font.pointSize: units.gu(1) }
+   
+   StyleHints {
+                             foregroundColor: "White"
+                             backgroundColor: "#669900"
+                             dividerColor: "#669900"
+                                            }
 
    PageStack {
       id: pageStack
