@@ -1,0 +1,304 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the plants.s710 package.
+#
+# Heimen Stoffels <vistausss@fastmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: plants.s710\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-16 11:33+0000\n"
+"PO-Revision-Date: 2022-06-18 14:45+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.04.2\n"
+
+#: ../qml/pages/ImportPage.qml:13
+msgid "Load image"
+msgstr "Afbeelding laden"
+
+#: ../qml/pages/MainPage.qml:20 Plants.desktop.in.h:1
+msgid "Plants"
+msgstr "Planten"
+
+#: ../qml/pages/MainPage.qml:49
+msgid "Identification failed"
+msgstr "De plant is niet herkend"
+
+#: ../qml/pages/MainPage.qml:50
+msgid "Failed to send identification request to Pl@ntNet (%1)."
+msgstr "Het identificatieverzoek aan Pl@ntNet (%1) kan niet worden verstuurd."
+
+#: ../qml/pages/MainPage.qml:63 ../qml/util/Dialogs.qml:98
+msgid "Failed to init storage directory"
+msgstr "De opslagmap kan niet worden aangemaakt"
+
+#: ../qml/pages/MainPage.qml:64 ../qml/util/Dialogs.qml:99
+msgid "Storage directory could not be initialized (%1)."
+msgstr "De opslagmap kan niet worden aangemaakt (%1)."
+
+#: ../qml/pages/MainPage.qml:87
+msgid "No plants identified yet"
+msgstr "Er zijn nog geen planten herkend"
+
+#: ../qml/pages/MainPage.qml:97 ../qml/pages/RequestPage.qml:18
+msgid "New identification"
+msgstr "Herkenning starten"
+
+#: ../qml/pages/MainPage.qml:101
+msgid "API Key missing"
+msgstr "De api-sleutel ontbreekt"
+
+#: ../qml/pages/MainPage.qml:102
+msgid ""
+"The Pl@ntNet API-Key has not been configured yet. Without this, the app will "
+"not work."
+msgstr ""
+"De Pl@ntNet-api-sleutel ontbreekt. Zonder deze sleutel werkt de app niet."
+
+#: ../qml/pages/MainPage.qml:140
+msgid "Delete plant?"
+msgstr "Plant verwijderen?"
+
+#: ../qml/pages/MainPage.qml:141
+msgid "Shall the plant '%1' be deleted? This operation can not be undone."
+msgstr ""
+"Weet je zeker dat je ‘%1’ wilt verwijderen? Deze actie kan niet ongedaan"
+" worden gemaakt."
+
+#: ../qml/pages/MainPage.qml:142
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: ../qml/pages/MainPage.qml:143 ../qml/util/Dialogs.qml:18
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: ../qml/pages/MainPage.qml:151
+msgid "Deleting plant failed"
+msgstr "Het verwijderen is mislukt"
+
+#: ../qml/pages/MainPage.qml:152
+msgid "Plant could not be deleted (%1)."
+msgstr "De plant kan niet worden verwijderd (%1)."
+
+#: ../qml/pages/MainPage.qml:167
+msgid "1 identified plant"
+msgstr "1 plant herkend"
+
+#: ../qml/pages/MainPage.qml:168
+msgid "%1 identified plants"
+msgstr "%1 planten herkend"
+
+#: ../qml/pages/PlantPage.qml:17
+msgid "Plant details"
+msgstr "Plantgegevens"
+
+#: ../qml/pages/RequestPage.qml:36
+msgid ""
+"Add up to 5 images for identification. The images must be of the same plant. "
+"The more images are provided, the better the identification result will be."
+msgstr ""
+"Voeg maximaal 5 afbeeldingen toe om te helpen bij de herkenning. De"
+" afbeelding(en) moet(en) van dezelfde plant zijn. Hoe meer afbeeldingen je"
+" toevoegt, hoe groter de kans dat de app de plant herkent."
+
+#: ../qml/pages/RequestPage.qml:37
+msgid ""
+"Pl@ntNet recommends images with the smaller side larger than 600px and "
+"smaller than 2000px. Ideally a square image zoomed on the organ around "
+"1280x1280px."
+msgstr ""
+"Pl@ntNet raadt aan afbeeldingen van minimaal 600px en maximaal 2000px te"
+" gebruiken. De ideale foto is vierkant en 1280x1280px."
+
+#: ../qml/pages/RequestPage.qml:63
+msgid "Identify"
+msgstr "Herkennen"
+
+#: ../qml/pages/ResultsPage.qml:20
+msgid "Identification results"
+msgstr "Resultaten"
+
+#: ../qml/pages/ResultsPage.qml:76
+msgid "Saving result failed"
+msgstr "Bewaren mislukt"
+
+#: ../qml/pages/ResultsPage.qml:77
+msgid "Result could not be saved (%1)."
+msgstr "De resultaten kunnen niet worden bewaard (%1)."
+
+#: ../qml/pages/SettingsPage.qml:22
+msgid "Settings"
+msgstr "Instellingen"
+
+#: ../qml/pages/SettingsPage.qml:45
+msgid "Pl@ntNet API key"
+msgstr "Pl@ntNet-api-sleutel"
+
+#: ../qml/pages/SettingsPage.qml:60
+msgid ""
+"In order to use the Pl@ntNet plant identification service, it is necessary "
+"to register at their website as developer and obtain an API-Key. This key "
+"needs to be configured within this app.\n"
+"\n"
+"Please visit https://my.plantnet.org/signup and create an account. "
+"Afterwards visit https://my.plantnet.org/account and click the eye-symbol at "
+"the very top (\"my API key\") to show the API-Key. Copy this key and paste "
+"it into the below text input field."
+msgstr ""
+"De Pl@ntNet-identificatiedienst vereist een api-sleutel. Deze kun je"
+" verkrijgen door je te registreren als ontwikkelaar op hun website.\n"
+"\n"
+"Open https://my.plantnet.org/signup in de browser en maak een account aan. Ga"
+" vervolgens naar https://my.plantnet.org/account en druk op het oogje"
+" bovenaan de pagina (“Mijn api-sleutel”) om de api-sleutel te tonen. Kopieer"
+" de sleutel en plak hem in onderstaand veld."
+
+#: ../qml/pages/SettingsPage.qml:77
+msgid "API-Key:"
+msgstr "Api-sleutel:"
+
+#: ../qml/pages/SettingsPage.qml:89
+msgid "Enter API-Key"
+msgstr "Voer de api-sleutel in"
+
+#: ../qml/pages/SettingsPage.qml:97
+msgid "Save"
+msgstr "Opslaan"
+
+#: ../qml/util/Dialogs.qml:17 ../qml/util/Dialogs.qml:83
+msgid "Okay"
+msgstr "Oké"
+
+#: ../qml/util/Dialogs.qml:50 ../qml/util/Dialogs.qml:104
+msgid "Close"
+msgstr "Sluiten"
+
+#: ../qml/util/Dialogs.qml:70
+msgid "Select plant part"
+msgstr "Deel van plant selecteren"
+
+#: ../qml/util/LoadingScreen.qml:37
+msgid "Plant is being identified, please wait."
+msgstr "Bezig met herkennen van plant…"
+
+#: ../qml/util/PlantCard.qml:57
+msgid "Name"
+msgstr "Naam"
+
+#: ../qml/util/PlantCard.qml:144
+msgid "Common names"
+msgstr "Gebruikelijke namen"
+
+#: ../qml/util/PlantCard.qml:163
+msgid "Save this result"
+msgstr "Resultaat bewaren"
+
+#: ../qml/util/PlantItem.qml:53
+msgid "Tap to add new image"
+msgstr "Druk om een afbeelding toe te voegen"
+
+#: ../qml/util/PlantItem.qml:95
+msgid "Organ"
+msgstr "Orgaan"
+
+#: ../qml/util/PlantUtils.qml:10
+msgid "Auto"
+msgstr "Automatisch"
+
+#: ../qml/util/PlantUtils.qml:11
+msgid "Leaf"
+msgstr "Blad"
+
+#: ../qml/util/PlantUtils.qml:12
+msgid "Flower"
+msgstr "Bloem"
+
+#: ../qml/util/PlantUtils.qml:13
+msgid "Fruit"
+msgstr "Fruit"
+
+#: ../qml/util/PlantUtils.qml:14
+msgid "Bark"
+msgstr "Stam"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:54
+msgid "No source images in identification result"
+msgstr "De resultaten bevatten geen bronafbeeldingen"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:68
+msgid "Own photo"
+msgstr "Eigen foto"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:74
+msgid "Failed to save source images for plant: "
+msgstr "De bronafbeeldingen van de volgende plant kunnen niet worden bewaard: "
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:92
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:95
+msgid "Failed to save plant JSON: "
+msgstr "De json-gegevens van de volgende plant kunnen niet worden bewaard: "
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:112
+msgid "Failed to open plant JSON: "
+msgstr "De json-gegevens van de volgende plant kunnen niet worden geopend: "
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:117
+msgid "Failed to open plant JSON #2: "
+msgstr "De json #2-gegevens van de volgende plant kunnen niet worden geopend: "
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:134
+msgid "Failed to read plant JSON: "
+msgstr "De json-gegevens van de volgende plant kunnen niet worden uitgelezen: "
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:139
+msgid "Unexpected/malformed plant JSON #1"
+msgstr "Onverwachte/Beschadigde json-gegevens #1"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:149
+msgid "Unexpected/malformed plant JSON #2"
+msgstr "Onverwachte/Beschadigde json-gegevens #2"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:168
+msgid "Unexpected/malformed plant JSON #3"
+msgstr "Onverwachte/Beschadigde json-gegevens #3"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:186
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:191
+msgid "Failed to open plant image: "
+msgstr "De afbeelding kan niet worden geopend: "
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:56
+msgid "Failed to determine writable app data storage location"
+msgstr "De opslaglocatie kan niet worden vastgesteld"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:65
+msgid "App data storage location inaccessible"
+msgstr "De opslaglocatie is ontoegankelijk"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:66
+msgid "can't create subfolder:"
+msgstr "De onderliggende map kan niet worden aangemaakt:"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:179
+msgid "Failed to save plant"
+msgstr "De plant kan niet worden bewaard"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:203
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:209
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:225
+msgid "Failed to delete plant (plant unknown)"
+msgstr "De plant kan niet worden verwijderd (onbekende plant)"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:214
+msgid "Failed to delete plant from storage directory (%1)"
+msgstr "De plant kan niet worden verwijderd uit de opslagmap (%1)"
+
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:230
+msgid "Failed to delete plant image from storage directory (%1)"
+msgstr "De afbeelding kan niet worden verwijderd uit de opslagmap (%1)"
