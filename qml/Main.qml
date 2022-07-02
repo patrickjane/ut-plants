@@ -13,6 +13,7 @@ MainView {
    objectName: 'mainView'
    applicationName: 'plants.s710'
    automaticOrientation: false
+   anchorToKeyboard: true
 
    width: units.gu(45)
    height: units.gu(75)

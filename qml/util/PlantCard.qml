@@ -23,35 +23,39 @@ Item {
       id: resultImageModel
    }
 
-   Rectangle {
+   UbuntuShape {
       id: item
-      width: parent.width * 0.8
-      height: parent.height
+      width: parent.width * 0.8; height: parent.height
       anchors.centerIn: parent
-      radius: 10
-      color: "#669900"
+
+      radius: "small"
+      // color: UbuntuColors.green
 
       Column {
          id: contents
-         anchors.top: parent.top
-         anchors.left: parent.left
-         anchors.right: parent.right
-         anchors.topMargin: units.gu(1)
-         anchors.rightMargin: units.gu(1)
-         anchors.leftMargin: units.gu(1)
-         anchors.bottom: saveButton.top
+
+         anchors {
+            top: parent.top
+            left: parent.left
+            right: parent.right
+            topMargin: units.gu(1)
+            rightMargin: units.gu(1)
+            leftMargin: units.gu(1)
+            bottom: saveButton.top
+         }
 
          spacing: plantCard.elementSpacing
 
          Item {
             id: header
-            width: parent.width
-            height: units.gu(4)
+            width: parent.width; height: units.gu(4)
 
             Column {
                id: nameColumn
-               anchors.top: parent.top
-               anchors.left: parent.left
+               anchors {
+                  top: parent.top
+                  left: parent.left
+               }
 
                Text {
                   text: i18n.tr("Name")
@@ -65,29 +69,33 @@ Item {
             }
 
             Row {
-               anchors.top: parent.top
-               anchors.right: parent.right
+               anchors {
+                  top: parent.top
+                  right: parent.right
+               }
                height: nameColumn.height
 
                spacing: units.gu(1)
 
                Icon {
                   anchors.verticalCenter: parent.verticalCenter
+
                   name: "image-quality"
                   color: "white"
-                  width: units.gu(2)
-                  height: units.gu(2)
+
+                  width: units.gu(2); height: width
                }
                Text {
                   property int scoreValue: Math.round(plant.score*100)
 
-                  anchors.verticalCenter: parent.verticalCenter
                   text: scoreValue + "%"
+
+                  anchors.verticalCenter: parent.verticalCenter
                   font.pixelSize: units.gu(2)
                   font.bold: true
 
                   color: scoreValue > 80 ? "white"
-                           : (scoreValue > 50 ? UbuntuColors.orange : UbuntuColors.red)
+                     : (scoreValue > 50 ? UbuntuColors.orange : UbuntuColors.red)
                }
             }
          }
@@ -100,9 +108,10 @@ Item {
 
          ListView {
             id: resultImagesList
+
             anchors.left: parent.left
-            width: parent.width
-            height: parent.height * 0.5
+            width: parent.width; height: parent.height * 0.5
+
             model: resultImageModel
 
             clip: true
@@ -112,13 +121,11 @@ Item {
 
             delegate: Component {
                Item {
-                  width: resultImagesList.width
-                  height: resultImagesList.height
+                  width: resultImagesList.width; height: resultImagesList.height
 
                   Image {
                      source: prepareImageUrl(url)
-                     width: parent.width
-                     height: parent.height
+                     width: parent.width; height: parent.height
                      asynchronous: true
 
                      fillMode: Image.PreserveAspectCrop
@@ -155,16 +162,18 @@ Item {
 
       Button {
          id: saveButton
-         anchors.bottom: parent.bottom
-         anchors.bottomMargin: units.gu(2)
-         anchors.horizontalCenter: parent.horizontalCenter
+
+         anchors {
+            bottom: parent.bottom
+            bottomMargin: units.gu(2)
+            horizontalCenter: parent.horizontalCenter
+         }
          visible: plantCard.resultView && !!plantCard.saveFunction
 
          text: i18n.tr("Save this result")
+         color: theme.palette.normal.positive
 
-         onClicked: {
-            plantCard.saveFunction(plantCard.plant)
-         }
+         onClicked: plantCard.saveFunction(plantCard.plant)
       }
    }
 

@@ -19,22 +19,29 @@ Page {
    }
 
    function importImages(urls) {
-      console.log("import URLS:", JSON.stringify(urls))
+      console.log("Import URLS:", JSON.stringify(urls));
 
       urls.forEach(function(fileUrl) {
          if (imageModel.count < 6)
-            imageModel.insert(imageModel.count-1, {type: 'image', url: fileUrl + '', organ: PlantUtils.organs[1].name })
-      })
+            imageModel.insert(imageModel.count-1, {type: 'image', url: fileUrl + '', organ: PlantUtils.organs[1].name });
+      });
    }
 
    Text {
       id: titleText
-      anchors.top: header.bottom
-      anchors.topMargin: units.gu(2)
-      anchors.horizontalCenter: parent.horizontalCenter
+
+      anchors {
+         top: header.bottom
+         topMargin: units.gu(2)
+         horizontalCenter: parent.horizontalCenter
+      }
+
       width: parent.width * 0.9
+
       text: i18n.tr('Add up to 5 images for identification. The images must be of the same plant. The more images are provided, the better the identification result will be.')
-               + '\n\n' + i18n.tr('Pl@ntNet recommends images with the smaller side larger than 600px and smaller than 2000px. Ideally a square image zoomed on the organ around 1280x1280px.')
+         + '\n\n'
+         + i18n.tr('Pl@ntNet recommends images with the smaller side larger than 600px and smaller than 2000px. Ideally a square image zoomed on the organ around 1280x1280px.')
+
       color: Theme.palette.normal.baseText
 
       wrapMode: Text.WordWrap
@@ -42,6 +49,7 @@ Page {
 
    ListModel {
       id: imageModel
+
       ListElement {
          type: "placeholder"
          url: ''
@@ -56,30 +64,35 @@ Page {
 
    Button {
       id: analyzeButton
-      anchors.bottom: parent.bottom
-      anchors.bottomMargin: units.gu(6)
-      anchors.horizontalCenter: parent.horizontalCenter
+
+      anchors {
+         bottom: parent.bottom
+         bottomMargin: units.gu(3)
+         horizontalCenter: parent.horizontalCenter
+      }
 
       text: i18n.tr("Identify")
-      enabled: imageModel.count > 1
+      color: theme.palette.normal.positive
+
+      enabled: imageModel.count >= 5
       onClicked: {
          var request = [];
 
-         for (var i = 0; i < imageModel.count; i++) {
-            var entry = imageModel.get(i)
+         for (const i in imageModel) {
+            const entry = imageModel.get(i);
 
             if (entry.type == "placeholder")
-               continue
+               continue;
 
             request.push({
                url: entry.url.replace("file://", ""),
-               organ: entry.organ
-            })
+               organ: entry.organ,
+            });
          }
 
          plantsModel.identifyPlant(request);
-         pageStack.pop()
-         mainPage.loadingScreenShown = true
+         pageStack.pop();
+         mainPage.loadingScreenShown = true;
       }
    }
 
@@ -88,11 +101,15 @@ Page {
       property double rowSpacing: units.gu(1)
 
       model: imageModel
-      anchors.topMargin: units.gu(2)
-      anchors.top: titleText.bottom
-      anchors.bottom: analyzeButton.top
-      anchors.bottomMargin: units.gu(2)
-      anchors.horizontalCenter: parent.horizontalCenter
+
+      anchors {
+         topMargin: units.gu(2)
+         top: titleText.bottom
+         bottom: analyzeButton.top
+         bottomMargin: units.gu(2)
+         horizontalCenter: parent.horizontalCenter
+      }
+
       width: parent.width * 0.9
       spacing: rowSpacing
       clip: true
@@ -103,32 +120,33 @@ Page {
             mainText: organ && PlantUtils.toTitle(organ) || ''
             listMode: false
             placeholder: type == "placeholder"
-            visible: !placeholder || imageModel.count < 6
+            visible: !placeholder || imageModel.count < 6 // FIXME: Visible if not a placeholder OR less then 6 images. Is it a logic error?
 
             onClicked: function() {
+               // FIXME: You're returning it it isn't a placeholder. Are you only adding placeholders?
                if (type != "placeholder")
                   return;
 
-               addNewImage()
+               addNewImage();
             }
 
             onEdit: function() {
-               var dialog = Dialogs.showPickerDialog(root)
+               var dialog = Dialogs.showPickerDialog(root);
 
                dialog.accepted.connect(function() {
-                  mainText = PlantUtils.toTitle(dialog.selection)
-               })
+                  mainText = PlantUtils.toTitle(dialog.selection);
+               });
             }
 
             onDelete: function() {
-               imageModel.remove(index, 1)
+               imageModel.remove(index, 1);
             }
          }
       }
    }
 
    function addNewImage() {
-      var importPage = pageStack.push(Qt.resolvedUrl("ImportPage.qml"), {})
-      importPage.imported.connect(importImages)
+      var importPage = pageStack.push(Qt.resolvedUrl("ImportPage.qml"), {});
+      importPage.imported.connect(importImages);
    }
 }

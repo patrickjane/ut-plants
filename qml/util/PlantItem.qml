@@ -1,4 +1,4 @@
-import QtQuick 2.7
+import QtQuick 2.12
 import Ubuntu.Components 1.3
 import QtQuick.Layouts 1.3
 import Ubuntu.Content 1.1
@@ -6,7 +6,7 @@ import QtGraphicalEffects 1.12
 
 import "../util"
 
-Rectangle {
+UbuntuShape {
    id: item
 
    property var plantObject
@@ -19,12 +19,12 @@ Rectangle {
    property bool placeholder: false
    property double spacing: units.gu(1)
 
-   width: parent.width
-   height: units.gu(8)
-   radius: 10
-   color: placeholder ? "white" : "#669900"
-   border.width: placeholder ? 2 : 0
-   border.color: "#cdcdcd"
+   width: parent.width; height: units.gu(8)
+   radius: "small"
+   color: placeholder ? theme.palette.normal.raised : UbuntuColors.green
+//    border.width: placeholder ? 2 : 0
+//    border.color: "#cdcdcd"
+   aspect: placeholder ? UbuntuShape.Inset : UbuntuShape.DropShadow
 
    MouseArea {
       anchors.fill: parent
@@ -32,25 +32,28 @@ Rectangle {
 
       onClicked: {
          if (item.onClicked)
-            item.onClicked(item.plantObject)
+            item.onClicked(item.plantObject);
       }
    }
 
    Icon {
       visible: item.placeholder
       name: "add"
-      anchors.verticalCenter: parent.verticalCenter
-      anchors.left: parent.left
-      anchors.leftMargin: units.gu(2)
 
-      width: units.gu(2)
-      height: units.gu(2)
+      anchors {
+         verticalCenter: parent.verticalCenter
+         left: parent.left
+         leftMargin: units.gu(2)
+      }
+
+      width: units.gu(2); height: width
    }
 
    Text {
+      text: i18n.tr("Tap to add new image")
+
       visible: item.placeholder
       anchors.centerIn: parent
-      text: i18n.tr("Tap to add new image")
       color: "#676767"
    }
 
@@ -61,29 +64,29 @@ Rectangle {
 
       Image {
          id: thumbImage
-         width: units.gu(8)
-         height: units.gu(8)
+         width: units.gu(8); height: width
+
          source: item.imageUrl
          fillMode: Image.PreserveAspectCrop
+
          layer.enabled: true
          layer.effect: OpacityMask {
             maskSource: Item {
-                  width: thumbImage.width
-                  height: thumbImage.height
-                  Rectangle {
-                     anchors.centerIn: parent
-                     width: Math.min(thumbImage.width, thumbImage.height)
-                     height: width
-                     radius: 10
-                  }
+               width: thumbImage.width; height: thumbImage.height
+
+               Rectangle {
+                  anchors.centerIn: parent
+                  width: Math.min(thumbImage.width, thumbImage.height); height: width
+                  radius: 10
+               }
             }
          }
       }
 
       Text {
+         text: item.mainText
          visible: item.listMode
          anchors.verticalCenter: parent.verticalCenter
-         text: item.mainText
          color: "white"
       }
 
@@ -106,33 +109,45 @@ Rectangle {
    }
 
    Button {
-      width: units.gu(4)
-      height: units.gu(4)
-      anchors.right: closeButton.left
-      anchors.rightMargin: units.gu(2)
-      anchors.verticalCenter: parent.verticalCenter
-      visible: !item.listMode && !item.placeholder
-      iconName: "compose"
+      width: units.gu(4); height: width
 
-      onClicked: {
-         if (item.onEdit)
-            item.onEdit()
+      anchors {
+         right: closeButton.left
+         rightMargin: units.gu(2)
+         verticalCenter: parent.verticalCenter
+      }
+      visible: !item.listMode && !item.placeholder
+
+      iconName: "compose"
+      color: UbuntuColors.graphite
+      //color: "transparent"
+
+      TapHandler {
+         onTapped: {
+            if (item.onEdit)
+               item.onEdit()
+         }
       }
    }
 
    Button {
       id: closeButton
-      width: units.gu(4)
-      height: units.gu(4)
-      anchors.right: parent.right
-      anchors.rightMargin: units.gu(2)
-      anchors.verticalCenter: parent.verticalCenter
+
+      width: units.gu(4); height: width
+
+      anchors {
+         right: parent.right
+         rightMargin: units.gu(2)
+         verticalCenter: parent.verticalCenter
+      }
+
       visible: !item.placeholder
       iconName: "delete"
+      color: theme.palette.normal.negative
 
       onClicked: {
          if (item.onDelete)
-            item.onDelete(item.plantObject && item.plantObject.id)
+            item.onDelete(item.plantObject && item.plantObject.id);
       }
    }
 }

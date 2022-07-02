@@ -22,8 +22,8 @@ Page {
 
    Component.onCompleted: {
       resultsData.forEach(function(res) {
-         resultsModel.append(res)
-      })
+         resultsModel.append(res);
+      });
    }
 
    ListModel {
@@ -32,9 +32,12 @@ Page {
 
    QC.PageIndicator {
       id: pageIndicator
-      anchors.horizontalCenter: parent.horizontalCenter
-      anchors.bottom: parent.bottom
-      anchors.bottomMargin: units.gu(2)
+
+      anchors {
+         horizontalCenter: parent.horizontalCenter
+         bottom: parent.bottom
+         bottomMargin: units.gu(2)
+      }
 
       currentIndex: resultList.currentIndex
       count: resultList.count
@@ -42,12 +45,15 @@ Page {
 
    ListView {
       id: resultList
-      anchors.top: header.bottom
-      anchors.topMargin: units.gu(2)
-      anchors.left: parent.left
-      anchors.right: parent.right
-      anchors.bottom: pageIndicator.top
-      anchors.bottomMargin: units.gu(2)
+
+      anchors {
+         top: header.bottom
+         topMargin: units.gu(2)
+         left: parent.left
+         right: parent.right
+         bottom: pageIndicator.top
+         bottomMargin: units.gu(2)
+      ]
 
       clip: true
       orientation: ListView.Horizontal
@@ -60,8 +66,7 @@ Page {
 
       delegate: Component {
          PlantCard {
-            width: resultList.width
-            height: resultList.height
+            width: resultList.width; height: resultList.height
 
             plant: resultsData[index]
             resultView: true
@@ -69,14 +74,16 @@ Page {
             saveFunction: function(plant) {
                var err = plantsModel.savePlant(plant);
 
-               if (!err) {
-                  pageStack.pop()
-               } else {
+               if (!!err) {
                   Dialogs.showErrorDialog(root,
-                                          i18n.tr("Saving result failed"),
-                                          i18n.tr("Result could not be saved (%1).").arg(err))
+                     i18n.tr("Saving result failed"),
+                     i18n.tr("Result could not be saved (%1).").arg(err),
+                  );
+
+                  return;
                }
 
+               pageStack.pop();
             }
          }
       }

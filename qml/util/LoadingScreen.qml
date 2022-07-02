@@ -17,11 +17,12 @@ Rectangle {
 
    Rectangle {
       id: loadingContent
-      color: "white"
-      radius: 10
+
       anchors.centerIn: parent
-      width: parent.width * 0.8
-      height: units.gu(24)
+      width: parent.width * 0.8; height: units.gu(24)
+      radius: 10
+
+      color: theme.palette.normal.background
 
       Column {
          anchors.centerIn: parent
@@ -32,7 +33,7 @@ Rectangle {
             running: true
          }
 
-         Text {
+         Label {
             anchors.horizontalCenter: parent.horizontalCenter
             text: i18n.tr("Plant is being identified, please wait.")
             wrapMode: Text.WordWrap

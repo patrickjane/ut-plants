@@ -21,10 +21,13 @@ Page {
       id: plantCard
       plant: plantPage.plant
 
-      anchors.top: header.bottom
-      anchors.topMargin: units.gu(2)
-      anchors.bottom: parent.bottom
-      anchors.bottomMargin: units.gu(2)
+      anchors {
+         top: header.bottom
+         topMargin: units.gu(2)
+         bottom: parent.bottom
+         bottomMargin: units.gu(2)
+      }
+
       width: parent.width
    }
 }
