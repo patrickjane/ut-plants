@@ -14,7 +14,7 @@ Item {
    property double elementSpacing: units.gu(2)
 
    Component.onCompleted: {
-      plant.images.forEach(function(image) {
+      plant.images.forEach(function (image) {
          resultImageModel.append(image)
       })
    }
@@ -79,15 +79,15 @@ Item {
                   height: units.gu(2)
                }
                Text {
-                  property int scoreValue: Math.round(plant.score*100)
+                  property int scoreValue: Math.round(plant.score * 100)
 
                   anchors.verticalCenter: parent.verticalCenter
                   text: scoreValue + "%"
                   font.pixelSize: units.gu(2)
                   font.bold: true
 
-                  color: scoreValue > 80 ? "white"
-                           : (scoreValue > 50 ? UbuntuColors.orange : UbuntuColors.red)
+                  color: scoreValue > 80 ? "white" : (scoreValue
+                                                      > 50 ? UbuntuColors.orange : UbuntuColors.red)
                }
             }
          }
@@ -170,11 +170,11 @@ Item {
 
    function prepareImageUrl(url) {
       if (!url)
-         return url;
+         return url
 
-      if (url[0] == '/')
-         return 'file://' + url;
+      if (url[0] === '/')
+         return 'file://' + url
 
-      return url;
+      return url
    }
 }

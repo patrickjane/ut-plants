@@ -68,14 +68,15 @@ Rectangle {
          layer.enabled: true
          layer.effect: OpacityMask {
             maskSource: Item {
-                  width: thumbImage.width
-                  height: thumbImage.height
-                  Rectangle {
-                     anchors.centerIn: parent
-                     width: Math.min(thumbImage.width, thumbImage.height)
-                     height: width
-                     radius: 10
-                  }
+               width: thumbImage.width
+               height: thumbImage.height
+
+               Rectangle {
+                  anchors.centerIn: parent
+                  width: Math.min(thumbImage.width, thumbImage.height)
+                  height: width
+                  radius: 10
+               }
             }
          }
       }
@@ -98,7 +99,7 @@ Rectangle {
          }
 
          Text {
-            width: item.width - units.gu(16) - 4*item.spacing
+            width: item.width - units.gu(16) - 4 * item.spacing
             text: item.mainText
             color: "white"
          }

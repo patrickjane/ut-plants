@@ -6,7 +6,7 @@ import QtQuick.Controls 2.5 as QC
 Rectangle {
    id: loadingScreen
    anchors.fill: parent
-   color: Qt.rgba(0.5,0.5,0.5,0.5)
+   color: Qt.rgba(0.5, 0.5, 0.5, 0.5)
    z: 1000
 
    MouseArea {

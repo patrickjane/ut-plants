@@ -23,7 +23,7 @@ Page {
          Action {
             iconName: "settings"
             onTriggered: {
-               mainPage.openSettings();
+               mainPage.openSettings()
             }
          }
       ]
@@ -45,25 +45,30 @@ Page {
          mainPage.loadingScreenShown = false
 
          if (error) {
-            Dialogs.showErrorDialog(root,
-                                 i18n.tr("Identification failed"),
-                                 i18n.tr("Failed to send identification request to Pl@ntNet (%1).").arg(error))
+            Dialogs.showErrorDialog(
+                     root, i18n.tr("Identification failed"), i18n.tr(
+                        "Failed to send identification request to Pl@ntNet (%1).").arg(
+                        error))
             return
          }
 
-         pageStack.push(Qt.resolvedUrl("ResultsPage.qml"), { resultsData: result, plantsModel: plantsModel })
+         pageStack.push(Qt.resolvedUrl("ResultsPage.qml"), {
+                           "resultsData": result,
+                           "plantsModel": plantsModel
+                        })
       }
    }
 
    Component.onCompleted: {
-      var err = plantsModel.init();
+      var err = plantsModel.init()
 
-      if (err != "") {
-         Dialogs.showErrorDialog(root,
-                                 i18n.tr("Failed to init storage directory"),
-                                 i18n.tr("Storage directory could not be initialized (%1).").arg(err))
+      if (err) {
+         Dialogs.showErrorDialog(
+                  root, i18n.tr("Failed to init storage directory"), i18n.tr(
+                     "Storage directory could not be initialized (%1).").arg(
+                     err))
       } else {
-         plantsModel.reload();
+         plantsModel.reload()
       }
    }
 
@@ -97,15 +102,17 @@ Page {
       text: i18n.tr("New identification")
       onClicked: {
          if (!settings.apiKey) {
-            var dialog = Dialogs.showErrorDialog(root,
-                                                i18n.tr("API Key missing"),
-                                                i18n.tr("The Pl@ntNet API-Key has not been configured yet. Without this, the app will not work."))
+            var dialog = Dialogs.showErrorDialog(
+                     root, i18n.tr("API Key missing"), i18n.tr(
+                        "The Pl@ntNet API-Key has not been configured yet. Without this, the app will not work."))
 
-            dialog.accepted.connect(function() {
-               mainPage.openSettings();
+            dialog.accepted.connect(function () {
+               mainPage.openSettings()
             })
          } else {
-            pageStack.push(Qt.resolvedUrl("RequestPage.qml"), { plantsModel: plantsModel })
+            pageStack.push(Qt.resolvedUrl("RequestPage.qml"), {
+                              "plantsModel": plantsModel
+                           })
          }
       }
    }
@@ -131,25 +138,26 @@ Page {
             plantObject: plant
             listMode: true
 
-            onClicked: function(plant) {
-               pageStack.push(Qt.resolvedUrl("PlantPage.qml"), { plant: plant })
+            onClicked: function (plant) {
+               pageStack.push(Qt.resolvedUrl("PlantPage.qml"), {
+                                 "plant": plant
+                              })
             }
 
-            onDelete: function(plantID) {
-               var dialog = Dialogs.showQuestionDialog(root,
-                              i18n.tr("Delete plant?"),
-                              i18n.tr("Shall the plant '%1' be deleted? This operation can not be undone.").arg(plant.species),
-                              i18n.tr("Delete"),
-                              i18n.tr("Cancel"),
-                              UbuntuColors.red)
+            onDelete: function (plantID) {
+               var dialog = Dialogs.showQuestionDialog(
+                        root, i18n.tr("Delete plant?"), i18n.tr(
+                           "Shall the plant '%1' be deleted? This operation can not be undone.").arg(
+                           plant.species), i18n.tr("Delete"),
+                        i18n.tr("Cancel"), UbuntuColors.red)
 
-               dialog.accepted.connect(function() {
+               dialog.accepted.connect(function () {
                   var err = plantsModel.deletePlant(plantID)
 
-                  if (err != "") {
-                     Dialogs.showErrorDialog(root,
-                        i18n.tr("Deleting plant failed"),
-                        i18n.tr("Plant could not be deleted (%1).").arg(err))
+                  if (err) {
+                     Dialogs.showErrorDialog(
+                              root, i18n.tr("Deleting plant failed"), i18n.tr(
+                                 "Plant could not be deleted (%1).").arg(err))
                   }
                })
             }
@@ -163,17 +171,17 @@ Page {
       anchors.bottom: parent.bottom
       anchors.bottomMargin: units.gu(2)
       anchors.horizontalCenter: parent.horizontalCenter
-      text: plantList.count == 1
-         ? i18n.tr("1 identified plant")
-         : i18n.tr("%1 identified plants").arg(plantList.count)
+      text: plantList.count == 1 ? i18n.tr("1 identified plant") : i18n.tr(
+                                      "%1 identified plants").arg(
+                                      plantList.count)
    }
 
    function openSettings() {
       var p = pageStack.push(Qt.resolvedUrl("./SettingsPage.qml"))
 
-      p.apiKeyChanged.connect(function(key) {
+      p.apiKeyChanged.connect(function (key) {
          settings.apiKey = key
-         plantsModel.setApiKey(key);
+         plantsModel.setApiKey(key)
       })
    }
 }

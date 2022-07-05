@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-16 11:33+0000\n"
+"POT-Creation-Date: 2022-07-05 19:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,61 +33,61 @@ msgstr ""
 msgid "Failed to send identification request to Pl@ntNet (%1)."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:63 ../qml/util/Dialogs.qml:98
+#: ../qml/pages/MainPage.qml:67 ../qml/util/Dialogs.qml:98
 msgid "Failed to init storage directory"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:64 ../qml/util/Dialogs.qml:99
+#: ../qml/pages/MainPage.qml:68 ../qml/util/Dialogs.qml:99
 msgid "Storage directory could not be initialized (%1)."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:87
+#: ../qml/pages/MainPage.qml:92
 msgid "No plants identified yet"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:97 ../qml/pages/RequestPage.qml:18
+#: ../qml/pages/MainPage.qml:102 ../qml/pages/RequestPage.qml:18
 msgid "New identification"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:101
+#: ../qml/pages/MainPage.qml:106
 msgid "API Key missing"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:102
+#: ../qml/pages/MainPage.qml:107
 msgid ""
 "The Pl@ntNet API-Key has not been configured yet. Without this, the app will "
 "not work."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:140
+#: ../qml/pages/MainPage.qml:149
 msgid "Delete plant?"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:141
+#: ../qml/pages/MainPage.qml:150
 msgid "Shall the plant '%1' be deleted? This operation can not be undone."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:142
+#: ../qml/pages/MainPage.qml:151
 msgid "Delete"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:143 ../qml/util/Dialogs.qml:18
+#: ../qml/pages/MainPage.qml:152 ../qml/util/Dialogs.qml:18
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:151
+#: ../qml/pages/MainPage.qml:159
 msgid "Deleting plant failed"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:152
+#: ../qml/pages/MainPage.qml:160
 msgid "Plant could not be deleted (%1)."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:167
+#: ../qml/pages/MainPage.qml:174
 msgid "1 identified plant"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:168
+#: ../qml/pages/MainPage.qml:175
 msgid "%1 identified plants"
 msgstr ""
 
@@ -95,20 +95,20 @@ msgstr ""
 msgid "Plant details"
 msgstr ""
 
-#: ../qml/pages/RequestPage.qml:36
+#: ../qml/pages/RequestPage.qml:40
 msgid ""
 "Add up to 5 images for identification. The images must be of the same plant. "
 "The more images are provided, the better the identification result will be."
 msgstr ""
 
-#: ../qml/pages/RequestPage.qml:37
+#: ../qml/pages/RequestPage.qml:41
 msgid ""
 "Pl@ntNet recommends images with the smaller side larger than 600px and "
 "smaller than 2000px. Ideally a square image zoomed on the organ around "
 "1280x1280px."
 msgstr ""
 
-#: ../qml/pages/RequestPage.qml:63
+#: ../qml/pages/RequestPage.qml:69
 msgid "Identify"
 msgstr ""
 
@@ -124,11 +124,11 @@ msgstr ""
 msgid "Result could not be saved (%1)."
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:22
+#: ../qml/pages/SettingsPage.qml:21
 msgid "Settings"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:45
+#: ../qml/pages/SettingsPage.qml:44
 msgid "Pl@ntNet API key"
 msgstr ""
 
@@ -160,7 +160,7 @@ msgstr ""
 msgid "Okay"
 msgstr ""
 
-#: ../qml/util/Dialogs.qml:50 ../qml/util/Dialogs.qml:104
+#: ../qml/util/Dialogs.qml:50 ../qml/util/Dialogs.qml:105
 msgid "Close"
 msgstr ""
 
@@ -188,102 +188,102 @@ msgstr ""
 msgid "Tap to add new image"
 msgstr ""
 
-#: ../qml/util/PlantItem.qml:95
+#: ../qml/util/PlantItem.qml:96
 msgid "Organ"
 msgstr ""
 
-#: ../qml/util/PlantUtils.qml:10
+#: ../qml/util/PlantUtils.qml:11
 msgid "Auto"
 msgstr ""
 
-#: ../qml/util/PlantUtils.qml:11
+#: ../qml/util/PlantUtils.qml:14
 msgid "Leaf"
 msgstr ""
 
-#: ../qml/util/PlantUtils.qml:12
+#: ../qml/util/PlantUtils.qml:17
 msgid "Flower"
 msgstr ""
 
-#: ../qml/util/PlantUtils.qml:13
+#: ../qml/util/PlantUtils.qml:20
 msgid "Fruit"
 msgstr ""
 
-#: ../qml/util/PlantUtils.qml:14
+#: ../qml/util/PlantUtils.qml:23
 msgid "Bark"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:54
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:57
 msgid "No source images in identification result"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:68
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:71
 msgid "Own photo"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:74
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:77
 msgid "Failed to save source images for plant: "
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:92
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:95
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:98
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:102
 msgid "Failed to save plant JSON: "
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:112
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:120
 msgid "Failed to open plant JSON: "
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:117
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:126
 msgid "Failed to open plant JSON #2: "
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:134
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:143
 msgid "Failed to read plant JSON: "
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:139
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:148
 msgid "Unexpected/malformed plant JSON #1"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:149
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:154
 msgid "Unexpected/malformed plant JSON #2"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:168
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:173
 msgid "Unexpected/malformed plant JSON #3"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:186
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:191
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:192
+#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:198
 msgid "Failed to open plant image: "
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:56
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:61
 msgid "Failed to determine writable app data storage location"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:65
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:70
 msgid "App data storage location inaccessible"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:66
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:71
 msgid "can't create subfolder:"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:179
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:184
 msgid "Failed to save plant"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:203
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:209
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:225
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:208
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:214
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:231
 msgid "Failed to delete plant (plant unknown)"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:214
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:219
 msgid "Failed to delete plant from storage directory (%1)"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:230
+#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:236
 msgid "Failed to delete plant image from storage directory (%1)"
 msgstr ""

@@ -18,8 +18,8 @@ Item {
          property string cancelButtonTitle: i18n.tr("Cancel")
          property color acceptButtonColor: UbuntuColors.green
 
-         signal accepted();
-         signal rejected();
+         signal accepted
+         signal rejected
 
          Button {
             text: acceptButtonTitle
@@ -44,12 +44,12 @@ Item {
 
       Dialog {
          id: errorDialog
-         signal accepted();
+         signal accepted
 
          Button {
             text: i18n.tr("Close")
             onClicked: {
-               errorDialog.accepted();
+               errorDialog.accepted()
                PopupUtils.close(errorDialog)
             }
          }
@@ -64,7 +64,7 @@ Item {
          property string selection: PlantUtils.organs[0].name
          property color acceptButtonColor: UbuntuColors.green
 
-         signal accepted();
+         signal accepted
 
          Text {
             text: i18n.tr("Select plant part")
@@ -96,7 +96,8 @@ Item {
       Dialog {
          id: storageErrorDialog
          title: i18n.tr("Failed to init storage directory")
-         text: i18n.tr("Storage directory could not be initialized (%1).").arg(errorString)
+         text: i18n.tr("Storage directory could not be initialized (%1).").arg(
+                  errorString)
 
          property string errorString
 
@@ -111,19 +112,22 @@ Item {
 
    function showQuestionDialog(parent, title, text, acceptButtonTitle, cancelButtonTitle, acceptButtonColor) {
       return PopupUtils.open(questionDialogComponent, parent, {
-                                title: title,
-                                text: text,
-                                acceptButtonTitle: acceptButtonTitle,
-                                cancelButtonTitle: cancelButtonTitle,
-                                acceptButtonColor: acceptButtonColor
-                             });
+                                "title": title,
+                                "text": text,
+                                "acceptButtonTitle": acceptButtonTitle,
+                                "cancelButtonTitle": cancelButtonTitle,
+                                "acceptButtonColor": acceptButtonColor
+                             })
    }
 
    function showErrorDialog(parent, title, text) {
-      return PopupUtils.open(errorDialogComponent, parent, { title: title, text: text });
+      return PopupUtils.open(errorDialogComponent, parent, {
+                                "title": title,
+                                "text": text
+                             })
    }
 
    function showPickerDialog(parent) {
-      return PopupUtils.open(pickerDialogComponent, parent, { });
+      return PopupUtils.open(pickerDialogComponent, parent, {})
    }
 }

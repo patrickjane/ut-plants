@@ -9,7 +9,6 @@ Page {
    id: settingsPage
    anchors.fill: parent
    signal updateIntervalChanged(var interval, var enabled)
-
    signal apiKeyChanged(var key)
 
    Settings {
@@ -57,7 +56,8 @@ Page {
                id: l2
                mainSlot: Text {
                   anchors.verticalCenter: parent.verticalCenter
-                  text: i18n.tr("In order to use the Pl@ntNet plant identification service, it is necessary to register at their website as developer and obtain an API-Key. This key needs to be configured within this app.\n\nPlease visit https://my.plantnet.org/signup and create an account. Afterwards visit https://my.plantnet.org/account and click the eye-symbol at the very top (\"my API key\") to show the API-Key. Copy this key and paste it into the below text input field.")
+                  text: i18n.tr(
+                           "In order to use the Pl@ntNet plant identification service, it is necessary to register at their website as developer and obtain an API-Key. This key needs to be configured within this app.\n\nPlease visit https://my.plantnet.org/signup and create an account. Afterwards visit https://my.plantnet.org/account and click the eye-symbol at the very top (\"my API key\") to show the API-Key. Copy this key and paste it into the below text input field.")
                   color: Theme.palette.normal.baseText
                   wrapMode: Text.WordWrap
                }
@@ -93,7 +93,7 @@ Page {
 
                      Button {
                         id: saveButton
-                        enabled: settings.apiKey != apiKeyInput.text
+                        enabled: settings.apiKey !== apiKeyInput.text
                         text: i18n.tr("Save")
                         onClicked: {
                            settings.apiKey = apiKeyInput.text

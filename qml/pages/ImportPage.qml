@@ -16,7 +16,6 @@ Page {
    ContentPeerPicker {
       anchors.fill: parent
       anchors.topMargin: picker.header.height
-
       showTitle: false
       contentType: ContentType.Pictures
       handler: ContentHandler.Source
@@ -24,12 +23,16 @@ Page {
       onPeerSelected: {
          peer.selectionType = ContentTransfer.Multiple
          picker.activeTransfer = peer.request()
-         picker.activeTransfer.stateChanged.connect(function() {
+
+         picker.activeTransfer.stateChanged.connect(function () {
             if (!picker.activeTransfer)
                return
 
             if (picker.activeTransfer.state === ContentTransfer.Charged) {
-               var urls = Object.keys(picker.activeTransfer.items).map(function(k) { return picker.activeTransfer.items[k].url })
+               var urls = Object.keys(picker.activeTransfer.items).map(
+                        function (k) {
+                           return picker.activeTransfer.items[k].url
+                        })
                picker.imported(urls)
                picker.activeTransfer = null
                pageStack.pop()

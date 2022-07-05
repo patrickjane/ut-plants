@@ -17,18 +17,18 @@ MainView {
    width: units.gu(45)
    height: units.gu(75)
 
-   Text { id: text; font.pointSize: units.gu(1) }
+   Text {
+      id: text
+      font.pointSize: units.gu(1)
+   }
 
    PageStack {
       id: pageStack
-      anchors {
-         fill: parent
-      }
+      anchors.fill: parent
 
       Component.onCompleted: {
          push(mainPage)
       }
-
 
       MainPage {
          id: mainPage

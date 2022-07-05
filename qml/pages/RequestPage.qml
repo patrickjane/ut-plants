@@ -19,11 +19,14 @@ Page {
    }
 
    function importImages(urls) {
-      console.log("import URLS:", JSON.stringify(urls))
-
-      urls.forEach(function(fileUrl) {
-         if (imageModel.count < 6)
-            imageModel.insert(imageModel.count-1, {type: 'image', url: fileUrl + '', organ: PlantUtils.organs[1].name })
+      urls.forEach(function (fileUrl) {
+         if (imageModel.count < 6) {
+            imageModel.insert(imageModel.count - 1, {
+                                 "type": 'image',
+                                 "url": fileUrl + '',
+                                 "organ": PlantUtils.organs[1].name
+                              })
+         }
       })
    }
 
@@ -33,8 +36,9 @@ Page {
       anchors.topMargin: units.gu(2)
       anchors.horizontalCenter: parent.horizontalCenter
       width: parent.width * 0.9
-      text: i18n.tr('Add up to 5 images for identification. The images must be of the same plant. The more images are provided, the better the identification result will be.')
-               + '\n\n' + i18n.tr('Pl@ntNet recommends images with the smaller side larger than 600px and smaller than 2000px. Ideally a square image zoomed on the organ around 1280x1280px.')
+      text: i18n.tr(
+               'Add up to 5 images for identification. The images must be of the same plant. The more images are provided, the better the identification result will be.') + '\n\n' + i18n.tr(
+               'Pl@ntNet recommends images with the smaller side larger than 600px and smaller than 2000px. Ideally a square image zoomed on the organ around 1280x1280px.')
       color: Theme.palette.normal.baseText
 
       wrapMode: Text.WordWrap
@@ -51,7 +55,9 @@ Page {
 
    Component {
       id: selectorDelegate
-      OptionSelectorDelegate { text: title }
+      OptionSelectorDelegate {
+         text: title
+      }
    }
 
    Button {
@@ -63,21 +69,21 @@ Page {
       text: i18n.tr("Identify")
       enabled: imageModel.count > 1
       onClicked: {
-         var request = [];
+         var request = []
 
          for (var i = 0; i < imageModel.count; i++) {
             var entry = imageModel.get(i)
 
-            if (entry.type == "placeholder")
+            if (entry.type === "placeholder")
                continue
 
             request.push({
-               url: entry.url.replace("file://", ""),
-               organ: entry.organ
-            })
+                            "url": entry.url.replace("file://", ""),
+                            "organ": entry.organ
+                         })
          }
 
-         plantsModel.identifyPlant(request);
+         plantsModel.identifyPlant(request)
          pageStack.pop()
          mainPage.loadingScreenShown = true
       }
@@ -102,25 +108,25 @@ Page {
             imageUrl: url || ''
             mainText: organ && PlantUtils.toTitle(organ) || ''
             listMode: false
-            placeholder: type == "placeholder"
+            placeholder: type === "placeholder"
             visible: !placeholder || imageModel.count < 6
 
-            onClicked: function() {
-               if (type != "placeholder")
-                  return;
+            onClicked: function () {
+               if (type !== "placeholder")
+                  return
 
                addNewImage()
             }
 
-            onEdit: function() {
+            onEdit: function () {
                var dialog = Dialogs.showPickerDialog(root)
 
-               dialog.accepted.connect(function() {
+               dialog.accepted.connect(function () {
                   mainText = PlantUtils.toTitle(dialog.selection)
                })
             }
 
-            onDelete: function() {
+            onDelete: function () {
                imageModel.remove(index, 1)
             }
          }

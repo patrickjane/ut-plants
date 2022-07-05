@@ -21,7 +21,7 @@ Page {
    }
 
    Component.onCompleted: {
-      resultsData.forEach(function(res) {
+      resultsData.forEach(function (res) {
          resultsModel.append(res)
       })
    }
@@ -66,17 +66,16 @@ Page {
             plant: resultsData[index]
             resultView: true
 
-            saveFunction: function(plant) {
-               var err = plantsModel.savePlant(plant);
+            saveFunction: function (plant) {
+               var err = plantsModel.savePlant(plant)
 
                if (!err) {
                   pageStack.pop()
                } else {
-                  Dialogs.showErrorDialog(root,
-                                          i18n.tr("Saving result failed"),
-                                          i18n.tr("Result could not be saved (%1).").arg(err))
+                  Dialogs.showErrorDialog(
+                           root, i18n.tr("Saving result failed"),
+                           i18n.tr("Result could not be saved (%1).").arg(err))
                }
-
             }
          }
       }
