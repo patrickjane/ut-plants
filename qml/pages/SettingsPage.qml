@@ -31,13 +31,15 @@ Page {
       contentHeight: childrenRect.height
 
       clip: true
+      flickableDirection: Flickable.AutoFlickIfNeeded
 
       Column {
          anchors.left: parent.left
          anchors.right: parent.right
 
          ListItem {
-            height: l1.height + (divider.visible ? divider.height : 0)
+            height: l1.height
+            divider.visible: false
 
             ListItemLayout {
                id: l1
@@ -50,24 +52,8 @@ Page {
          ListItem {
             anchors.left: parent.left
             anchors.right: parent.right
-            height: l2.height + (divider.visible ? divider.height : 0)
-
-            SlotsLayout {
-               id: l2
-               mainSlot: Text {
-                  anchors.verticalCenter: parent.verticalCenter
-                  text: i18n.tr(
-                           "In order to use the Pl@ntNet plant identification service, it is necessary to register at their website as developer and obtain an API-Key. This key needs to be configured within this app.\n\nPlease visit https://my.plantnet.org/signup and create an account. Afterwards visit https://my.plantnet.org/account and click the eye-symbol at the very top (\"my API key\") to show the API-Key. Copy this key and paste it into the below text input field.")
-                  color: Theme.palette.normal.baseText
-                  wrapMode: Text.WordWrap
-               }
-            }
-         }
-
-         ListItem {
-            anchors.left: parent.left
-            anchors.right: parent.right
-            height: l4.height + (divider.visible ? divider.height : 0)
+            height: l4.height
+            divider.visible: false
 
             SlotsLayout {
                id: l4
@@ -102,6 +88,24 @@ Page {
                         }
                      }
                   }
+               }
+            }
+         }
+
+         ListItem {
+            anchors.left: parent.left
+            anchors.right: parent.right
+            height: l2.height
+            divider.visible: false
+
+            SlotsLayout {
+               id: l2
+               mainSlot: Text {
+                  anchors.verticalCenter: parent.verticalCenter
+                  text: i18n.tr(
+                           "In order to use the Pl@ntNet plant identification service, it is necessary to register at their website as developer and obtain an API-Key. This key needs to be configured within this app.\n\nPlease visit https://my.plantnet.org/signup and create an developer account. Afterwards visit https://my.plantnet.org/account and click the eye-symbol at the very top (\"my API key\") to show the API-Key. Copy this key and paste it into the text input field above.")
+                  color: Theme.palette.normal.baseText
+                  wrapMode: Text.WordWrap
                }
             }
          }
