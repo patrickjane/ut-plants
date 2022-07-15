@@ -8,6 +8,7 @@
         <file>pages/PlantPage.qml</file>
         <file>pages/SettingsPage.qml</file>
         <file>util/Dialogs.qml</file>
+        <file>util/IconButton.qml</file>
         <file>util/PlantUtils.qml</file>
         <file>util/PlantCard.qml</file>
         <file>util/PlantItem.qml</file>

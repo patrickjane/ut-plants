@@ -106,32 +106,33 @@ Rectangle {
       }
    }
 
-   Button {
-      width: units.gu(4)
-      height: units.gu(4)
+
+   IconButton {
       anchors.right: closeButton.left
       anchors.rightMargin: units.gu(2)
       anchors.verticalCenter: parent.verticalCenter
+      widthGu: 4.0
+      heightGu: 4.0
       visible: !item.listMode && !item.placeholder
       iconName: "compose"
 
-      onClicked: {
+      onClicked: function() {
          if (item.onEdit)
             item.onEdit()
       }
    }
 
-   Button {
+   IconButton {
       id: closeButton
-      width: units.gu(4)
-      height: units.gu(4)
       anchors.right: parent.right
       anchors.rightMargin: units.gu(2)
       anchors.verticalCenter: parent.verticalCenter
+      widthGu: 4.0
+      heightGu: 4.0
       visible: !item.placeholder
       iconName: "delete"
 
-      onClicked: {
+      onClicked: function() {
          if (item.onDelete)
             item.onDelete(item.plantObject && item.plantObject.id)
       }
