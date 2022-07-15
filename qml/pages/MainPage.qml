@@ -32,6 +32,23 @@ Page {
    Settings {
       id: settings
       property string apiKey
+      property bool disclaimerAccepted: false
+   }
+
+   Disclaimer {
+      id: disclaimer
+      visible: !settings.disclaimerAccepted
+   }
+
+   Rectangle {
+      color: "#67676799"
+      anchors.fill: parent
+      visible: disclaimer.visible
+      z: 100
+      MouseArea {
+         anchors.fill: parent
+         onClicked: {}
+      }
    }
 
    LoadingScreen {

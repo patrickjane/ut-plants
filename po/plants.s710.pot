@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-06 18:51+0000\n"
+"POT-Creation-Date: 2022-07-15 09:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,69 +25,69 @@ msgstr ""
 msgid "Plants"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:49
+#: ../qml/pages/MainPage.qml:66
 msgid "Identification failed"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:50
+#: ../qml/pages/MainPage.qml:67
 msgid "Failed to send identification request to Pl@ntNet (%1)."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:67 ../qml/util/Dialogs.qml:98
+#: ../qml/pages/MainPage.qml:84 ../qml/util/Dialogs.qml:98
 msgid "Failed to init storage directory"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:68 ../qml/util/Dialogs.qml:99
+#: ../qml/pages/MainPage.qml:85 ../qml/util/Dialogs.qml:99
 msgid "Storage directory could not be initialized (%1)."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:92
+#: ../qml/pages/MainPage.qml:109
 msgid "No plants identified yet"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:102 ../qml/pages/RequestPage.qml:18
+#: ../qml/pages/MainPage.qml:119 ../qml/pages/RequestPage.qml:18
 msgid "New identification"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:106
+#: ../qml/pages/MainPage.qml:123
 msgid "API Key missing"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:107
+#: ../qml/pages/MainPage.qml:124
 msgid ""
 "The Pl@ntNet API-Key has not been configured yet. Without this, the app will "
 "not work."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:149
+#: ../qml/pages/MainPage.qml:166
 msgid "Delete plant?"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:150
+#: ../qml/pages/MainPage.qml:167
 msgid "Shall the plant '%1' be deleted? This operation can not be undone."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:151
+#: ../qml/pages/MainPage.qml:168
 msgid "Delete"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:152 ../qml/util/Dialogs.qml:18
+#: ../qml/pages/MainPage.qml:169 ../qml/util/Dialogs.qml:18
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:159
+#: ../qml/pages/MainPage.qml:176
 msgid "Deleting plant failed"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:160
+#: ../qml/pages/MainPage.qml:177
 msgid "Plant could not be deleted (%1)."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:174
+#: ../qml/pages/MainPage.qml:191
 msgid "1 identified plant"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:175
+#: ../qml/pages/MainPage.qml:192
 msgid "%1 identified plants"
 msgstr ""
 
@@ -166,6 +166,18 @@ msgstr ""
 
 #: ../qml/util/Dialogs.qml:70
 msgid "Select plant part"
+msgstr ""
+
+#: ../qml/util/Disclaimer.qml:50
+msgid ""
+"This app uses the online service of Pl@ntNet (plantnet.org) to identify "
+"plants. Photos will be uploaded to Pl@ntNet for recognition, and the result "
+"will show a probability of correctness. This means, results provided by the "
+"service could be wrong, or some plants can maybe not be identified at all."
+msgstr ""
+
+#: ../qml/util/Disclaimer.qml:56
+msgid "Accept"
 msgstr ""
 
 #: ../qml/util/LoadingScreen.qml:37

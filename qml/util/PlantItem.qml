@@ -106,7 +106,6 @@ Rectangle {
       }
    }
 
-
    IconButton {
       anchors.right: closeButton.left
       anchors.rightMargin: units.gu(2)
