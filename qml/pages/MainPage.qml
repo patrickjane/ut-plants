@@ -152,6 +152,7 @@ Page {
          PlantItem {
             imageUrl: "image://plants/" + plant.id
             mainText: plant.species
+            subText: plant.commonNames
             plantObject: plant
             listMode: true
 

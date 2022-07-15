@@ -15,6 +15,7 @@ Rectangle {
    property var onEdit
    property var onClicked
    property string mainText
+   property string subText
    property bool listMode: true
    property bool placeholder: false
    property double spacing: units.gu(1)
@@ -54,60 +55,87 @@ Rectangle {
       color: "#676767"
    }
 
-   Row {
-      visible: !item.placeholder
+   Image {
+      id: thumbImage
+      width: units.gu(8)
+      height: units.gu(8)
+      anchors.left: parent.left
       anchors.verticalCenter: parent.verticalCenter
-      spacing: item.spacing
+      visible: !item.placeholder
 
-      Image {
-         id: thumbImage
-         width: units.gu(8)
-         height: units.gu(8)
-         source: item.imageUrl
-         fillMode: Image.PreserveAspectCrop
-         layer.enabled: true
-         layer.effect: OpacityMask {
-            maskSource: Item {
-               width: thumbImage.width
-               height: thumbImage.height
+      source: item.imageUrl
+      fillMode: Image.PreserveAspectCrop
+      layer.enabled: true
+      layer.effect: OpacityMask {
+         maskSource: Item {
+            width: thumbImage.width
+            height: thumbImage.height
 
-               Rectangle {
-                  anchors.centerIn: parent
-                  width: Math.min(thumbImage.width, thumbImage.height)
-                  height: width
-                  radius: 10
-               }
+            Rectangle {
+               anchors.centerIn: parent
+               width: Math.min(thumbImage.width, thumbImage.height)
+               height: width
+               radius: 10
             }
-         }
-      }
-
-      Text {
-         visible: item.listMode
-         anchors.verticalCenter: parent.verticalCenter
-         text: item.mainText
-         color: "white"
-      }
-
-      Column {
-         visible: !item.listMode
-         anchors.verticalCenter: parent.verticalCenter
-
-         Text {
-            text: i18n.tr("Organ")
-            font.bold: true
-            color: "white"
-         }
-
-         Text {
-            width: item.width - units.gu(16) - 4 * item.spacing
-            text: item.mainText
-            color: "white"
          }
       }
    }
 
+   Column {
+      visible: !item.placeholder && item.listMode
+      anchors.verticalCenter: parent.verticalCenter
+      anchors.left: thumbImage.right
+      anchors.leftMargin: units.gu(2)
+      anchors.right: deleteButton.left
+      anchors.rightMargin: units.gu(2)
+      spacing: units.gu(1)
+
+      Text {
+         visible: item.listMode
+         text: item.mainText
+         width: parent.width
+         elide: Text.ElideRight
+         font.bold: true
+         color: "white"
+      }
+
+      Text {
+         visible: item.listMode
+         text: item.subText
+         width: parent.width
+         elide: Text.ElideRight
+         color: "white"
+      }
+   }
+
+   Column {
+      visible: !item.placeholder && !item.listMode
+      anchors.verticalCenter: parent.verticalCenter
+      anchors.left: thumbImage.right
+      anchors.leftMargin: units.gu(2)
+      anchors.right: editButton.left
+      anchors.rightMargin: units.gu(2)
+      spacing: units.gu(1)
+
+      Text {
+         text: i18n.tr("Organ")
+         width: parent.width
+         elide: Text.ElideRight
+         font.bold: true
+         color: "white"
+      }
+
+      Text {
+         text: item.mainText
+         width: parent.width
+         elide: Text.ElideRight
+         color: "white"
+      }
+   }
+
    IconButton {
-      anchors.right: closeButton.left
+      id: editButton
+      anchors.right: deleteButton.left
       anchors.rightMargin: units.gu(2)
       anchors.verticalCenter: parent.verticalCenter
       widthGu: 4.0
@@ -122,7 +150,7 @@ Rectangle {
    }
 
    IconButton {
-      id: closeButton
+      id: deleteButton
       anchors.right: parent.right
       anchors.rightMargin: units.gu(2)
       anchors.verticalCenter: parent.verticalCenter

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-15 09:55+0000\n"
+"POT-Creation-Date: 2022-07-15 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,35 +59,35 @@ msgid ""
 "not work."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:166
+#: ../qml/pages/MainPage.qml:167
 msgid "Delete plant?"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:167
+#: ../qml/pages/MainPage.qml:168
 msgid "Shall the plant '%1' be deleted? This operation can not be undone."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:168
+#: ../qml/pages/MainPage.qml:169
 msgid "Delete"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:169 ../qml/util/Dialogs.qml:18
+#: ../qml/pages/MainPage.qml:170 ../qml/util/Dialogs.qml:18
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:176
+#: ../qml/pages/MainPage.qml:177
 msgid "Deleting plant failed"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:177
+#: ../qml/pages/MainPage.qml:178
 msgid "Plant could not be deleted (%1)."
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:191
+#: ../qml/pages/MainPage.qml:192
 msgid "1 identified plant"
 msgstr ""
 
-#: ../qml/pages/MainPage.qml:192
+#: ../qml/pages/MainPage.qml:193
 msgid "%1 identified plants"
 msgstr ""
 
@@ -196,11 +196,11 @@ msgstr ""
 msgid "Save this result"
 msgstr ""
 
-#: ../qml/util/PlantItem.qml:53
+#: ../qml/util/PlantItem.qml:54
 msgid "Tap to add new image"
 msgstr ""
 
-#: ../qml/util/PlantItem.qml:96
+#: ../qml/util/PlantItem.qml:121
 msgid "Organ"
 msgstr ""
 
