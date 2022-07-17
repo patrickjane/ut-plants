@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-15 09:55+0000\n"
-"PO-Revision-Date: 2022-07-15 12:00+0200\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2022-07-17 05:41+0000\n"
+"PO-Revision-Date: 2022-07-17 07:45+0200\n"
+"Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -139,42 +139,39 @@ msgstr "Ergebnis konnte nicht gespeichert werden (%1)."
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: ../qml/pages/SettingsPage.qml:44
+#: ../qml/pages/SettingsPage.qml:45
 msgid "Pl@ntNet API key"
 msgstr "Pl@ntNet API-Schlüssel"
 
-#: ../qml/pages/SettingsPage.qml:63
-msgid "API-Key:"
-msgstr "API-Schlüssel:"
-
-#: ../qml/pages/SettingsPage.qml:75
-msgid "Enter API-Key"
-msgstr "API-Schlüssel eingeben"
-
-#: ../qml/pages/SettingsPage.qml:83
-msgid "Save"
-msgstr "Speichern"
-
-#: ../qml/pages/SettingsPage.qml:106
+#: ../qml/pages/SettingsPage.qml:61
 msgid ""
-"In order to use the Pl@ntNet plant identification service, it is necessary "
-"to register at their website as developer and obtain an API-Key. This key "
-"needs to be configured within this app.\n"
+"In order to use the Pl@ntNet plant identification service, you need to "
+"provide the app with a personal API-Key.\n"
 "\n"
 "Please visit https://my.plantnet.org/signup and create an developer account. "
 "Afterwards visit https://my.plantnet.org/account and click the eye-symbol at "
-"the very top (\"my API key\") to show the API-Key. Copy this key and paste "
-"it into the text input field above."
+"the very top (\"my API key\") to show the API-Key. Enter this key into the "
+"text input field above."
 msgstr ""
 "Um den Pflanzen-Identifizierungsdienst von Pl@ntNet zu nutzen, ist es "
-"notwendig, auf der Webseite von Pl@ntNet ein Entwicklerkonto zu erstellen um "
-"einen API-Schlüssel zu erhalten. Dieser API-Schlüssel muss in der App "
-"hinterlegt werden.\n"
+"notwendig in der App deinen persönlichen API-Schlüssel einzutragen\n"
 "\n"
-"Bitte ein Konto auf https://my.plantnet.org/signup erstellen und "
+"Bitte ein Entwicklerkonto auf https://my.plantnet.org/signup erstellen und "
 "anschließend unter https://my.plantnet.org/account ganz oben mit dem \"Augen-"
-"Symbol\" den API-Schlüssel anzeigen lassen. Dieser kann dann in das "
-"Eingabefeld oben kopiert werden."
+"Symbol\" den API-Schlüssel anzeigen lassen. Diesen  dann in dem Eingabefeld "
+"oben eintragen."
+
+#: ../qml/pages/SettingsPage.qml:78
+msgid "API-Key:"
+msgstr "API-Schlüssel:"
+
+#: ../qml/pages/SettingsPage.qml:90
+msgid "Enter API-Key"
+msgstr "API-Schlüssel eingeben"
+
+#: ../qml/pages/SettingsPage.qml:98
+msgid "Save"
+msgstr "Speichern"
 
 #: ../qml/util/Dialogs.qml:17 ../qml/util/Dialogs.qml:83
 msgid "Okay"
@@ -259,24 +256,24 @@ msgstr "Eigenes Foto"
 
 #: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:77
 msgid "Failed to save source images for plant: "
-msgstr "Quell-Fotos der Pflanze konnten nicht speichern:"
+msgstr "Quell-Fotos der Pflanze konnten nicht speichern: "
 
 #: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:98
 #: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:102
 msgid "Failed to save plant JSON: "
-msgstr "JSON-Datei konnte nicht gespeichert werden:"
+msgstr "JSON-Datei konnte nicht gespeichert werden: "
 
 #: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:120
 msgid "Failed to open plant JSON: "
-msgstr "JSON-Datei konnte nicht geöffnet werden:"
+msgstr "JSON-Datei konnte nicht geöffnet werden: "
 
 #: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:126
 msgid "Failed to open plant JSON #2: "
-msgstr "JSON-Datei konnte nicht geöffnet werden #2:"
+msgstr "JSON-Datei konnte nicht geöffnet werden #2: "
 
 #: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:143
 msgid "Failed to read plant JSON: "
-msgstr "JSON-Datei konnte nicht gelesen werden:"
+msgstr "JSON-Datei konnte nicht gelesen werden: "
 
 #: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:148
 msgid "Unexpected/malformed plant JSON #1"
@@ -293,7 +290,7 @@ msgstr "Unerwartetes/ungültiges JSON-Format #3"
 #: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:192
 #: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:198
 msgid "Failed to open plant image: "
-msgstr "Pflanzen-Foto konnte nicht geöffnet werden:"
+msgstr "Pflanzen-Foto konnte nicht geöffnet werden: "
 
 #: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:61
 msgid "Failed to determine writable app data storage location"
