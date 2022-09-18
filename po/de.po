@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-15 09:55+0000\n"
-"PO-Revision-Date: 2022-07-15 12:00+0200\n"
+"POT-Creation-Date: 2022-09-18 08:40+0000\n"
+"PO-Revision-Date: 2022-09-18 10:43+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -62,37 +62,37 @@ msgstr ""
 "Der Pl@ntNet API-Key wurde noch nicht konfiguriert. Ohne diesen wird die App "
 "nicht funktionieren."
 
-#: ../qml/pages/MainPage.qml:166
+#: ../qml/pages/MainPage.qml:167
 msgid "Delete plant?"
 msgstr "Pflanze löschen?"
 
-#: ../qml/pages/MainPage.qml:167
+#: ../qml/pages/MainPage.qml:168
 msgid "Shall the plant '%1' be deleted? This operation can not be undone."
 msgstr ""
 "Soll die Pflanze '%1' gelöscht werden? Dieser Vorgang kann nicht rückgängig "
 "gemacht werden."
 
-#: ../qml/pages/MainPage.qml:168
+#: ../qml/pages/MainPage.qml:169
 msgid "Delete"
 msgstr "Löschen"
 
-#: ../qml/pages/MainPage.qml:169 ../qml/util/Dialogs.qml:18
+#: ../qml/pages/MainPage.qml:170 ../qml/util/Dialogs.qml:18
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: ../qml/pages/MainPage.qml:176
+#: ../qml/pages/MainPage.qml:177
 msgid "Deleting plant failed"
 msgstr "Löschung fehlgeschlagen"
 
-#: ../qml/pages/MainPage.qml:177
+#: ../qml/pages/MainPage.qml:178
 msgid "Plant could not be deleted (%1)."
 msgstr "Pflanze konnte nicht gelöscht werden (%1)."
 
-#: ../qml/pages/MainPage.qml:191
+#: ../qml/pages/MainPage.qml:192
 msgid "1 identified plant"
 msgstr "1 identifizierte Pflanze"
 
-#: ../qml/pages/MainPage.qml:192
+#: ../qml/pages/MainPage.qml:193
 msgid "%1 identified plants"
 msgstr "%1 identifizierte Pflanzen"
 
@@ -139,40 +139,42 @@ msgstr "Ergebnis konnte nicht gespeichert werden (%1)."
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: ../qml/pages/SettingsPage.qml:44
+#: ../qml/pages/SettingsPage.qml:48
 msgid "Pl@ntNet API key"
 msgstr "Pl@ntNet API-Schlüssel"
 
-#: ../qml/pages/SettingsPage.qml:60
+#: ../qml/pages/SettingsPage.qml:65
 msgid ""
 "In order to use the Pl@ntNet plant identification service, it is necessary "
 "to register at their website as developer and obtain an API-Key. This key "
 "needs to be configured within this app.\n"
 "\n"
-"Please visit https://my.plantnet.org/signup and create an account. "
-"Afterwards visit https://my.plantnet.org/account and click the eye-symbol at "
-"the very top (\"my API key\") to show the API-Key. Copy this key and paste "
-"it into the below text input field."
+"Please visit <a href=\"https://my.plantnet.org/signup\">https://my.plantnet."
+"org/signup</a> and create a developer account. Afterwards visit <a href="
+"\"https://my.plantnet.org/account\">https://my.plantnet.org/account</a> and "
+"click the eye-symbol at the very top (\"my API key\") to show the API-Key. "
+"Copy this key and paste it into the below text input field."
 msgstr ""
 "Um den Pflanzen-Identifizierungsdienst von Pl@ntNet zu nutzen, ist es "
 "notwendig, auf der Webseite von Pl@ntNet ein Entwicklerkonto zu erstellen um "
 "einen API-Schlüssel zu erhalten. Dieser API-Schlüssel muss in der App "
 "hinterlegt werden.\n"
 "\n"
-"Bitte ein Konto auf https://my.plantnet.org/signup erstellen und "
-"anschließend unter https://my.plantnet.org/account ganz oben mit dem \"Augen-"
-"Symbol\" den API-Schlüssel anzeigen lassen. Dieser kann dann in das unten "
-"stehende Eingabefeld kopiert werden."
+"Bitte ein Entwickler-Konto auf <a href=\"https://my.plantnet.org/signup"
+"\">https://my.plantnet.org/signup</a> erstellen und anschließend unter <a "
+"href=\"https://my.plantnet.org/account\">https://my.plantnet.org/account</a> "
+"ganz oben mit dem \"Augen-Symbol\" den API-Schlüssel anzeigen lassen. Dieser "
+"kann dann in das unten stehende Eingabefeld kopiert werden."
 
-#: ../qml/pages/SettingsPage.qml:77
+#: ../qml/pages/SettingsPage.qml:83
 msgid "API-Key:"
 msgstr "API-Schlüssel:"
 
-#: ../qml/pages/SettingsPage.qml:89
+#: ../qml/pages/SettingsPage.qml:95
 msgid "Enter API-Key"
 msgstr "API-Schlüssel eingeben"
 
-#: ../qml/pages/SettingsPage.qml:97
+#: ../qml/pages/SettingsPage.qml:112
 msgid "Save"
 msgstr "Speichern"
 
@@ -221,11 +223,11 @@ msgstr "Gebräuchliche Namen"
 msgid "Save this result"
 msgstr "Dieses Ergebnis speichern"
 
-#: ../qml/util/PlantItem.qml:53
+#: ../qml/util/PlantItem.qml:54
 msgid "Tap to add new image"
 msgstr "Tippe um Foto hinzuzufügen"
 
-#: ../qml/util/PlantItem.qml:96
+#: ../qml/util/PlantItem.qml:121
 msgid "Organ"
 msgstr "Pflanzenteil"
 

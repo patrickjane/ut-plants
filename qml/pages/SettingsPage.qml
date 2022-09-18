@@ -22,19 +22,23 @@ Page {
    }
 
    Flickable {
+      id: flickable
       anchors.top: header.bottom
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.bottom: parent.bottom
+      anchors.bottomMargin: keyboardRect.visible ? keyboardRect.height : anchors.margins
 
       contentWidth: parent.width
-      contentHeight: childrenRect.height
+      contentHeight: settingsColumn.height
 
-      clip: true
+      flickableDirection: Flickable.AutoFlickIfNeeded
 
       Column {
+         id: settingsColumn
          anchors.left: parent.left
          anchors.right: parent.right
+         anchors.top: parent.top
 
          ListItem {
             height: l1.height + (divider.visible ? divider.height : 0)
@@ -56,10 +60,12 @@ Page {
                id: l2
                mainSlot: Text {
                   anchors.verticalCenter: parent.verticalCenter
+                  textFormat: Text.RichText
                   text: i18n.tr(
-                           "In order to use the Pl@ntNet plant identification service, it is necessary to register at their website as developer and obtain an API-Key. This key needs to be configured within this app.\n\nPlease visit https://my.plantnet.org/signup and create an account. Afterwards visit https://my.plantnet.org/account and click the eye-symbol at the very top (\"my API key\") to show the API-Key. Copy this key and paste it into the below text input field.")
+                           "In order to use the Pl@ntNet plant identification service, it is necessary to register at their website as developer and obtain an API-Key. This key needs to be configured within this app.\n\nPlease visit <a href=\"https://my.plantnet.org/signup\">https://my.plantnet.org/signup</a> and create a developer account. Afterwards visit <a href=\"https://my.plantnet.org/account\">https://my.plantnet.org/account</a> and click the eye-symbol at the very top (\"my API key\") to show the API-Key. Copy this key and paste it into the below text input field.")
                   color: Theme.palette.normal.baseText
                   wrapMode: Text.WordWrap
+                  onLinkActivated: Qt.openUrlExternally(link)
                }
             }
          }
@@ -89,6 +95,15 @@ Page {
                         placeholderText: i18n.tr("Enter API-Key")
                         width: parent.width - units.gu(2) - saveButton.width
                         text: settings.apiKey
+
+                        onActiveFocusChanged: {
+                                keyboardRect.visible = activeFocus
+                            if (activeFocus) {
+
+                              var posWithinFlickable = mapToItem(settingsColumn, 0, height / 2);
+                              flickable.contentY = posWithinFlickable.y - flickable.height / 2;
+                            }
+                        }
                      }
 
                      Button {
@@ -106,5 +121,14 @@ Page {
             }
          }
       }
+   }
+
+   Rectangle {
+      id: keyboardRect
+      width: parent.width
+      height: parent.height * 0.3
+      anchors.bottom: parent.bottom
+      color: "white"
+      visible: false
    }
 }

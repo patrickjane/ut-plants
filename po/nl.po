@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-15 10:16+0000\n"
-"PO-Revision-Date: 2022-09-17 17:14+0200\n"
+"POT-Creation-Date: 2022-09-18 08:40+0000\n"
+"PO-Revision-Date: 2022-09-18 10:44+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
@@ -136,38 +136,40 @@ msgstr "De resultaten kunnen niet worden bewaard (%1)."
 msgid "Settings"
 msgstr "Instellingen"
 
-#: ../qml/pages/SettingsPage.qml:44
+#: ../qml/pages/SettingsPage.qml:48
 msgid "Pl@ntNet API key"
 msgstr "Pl@ntNet-api-sleutel"
 
-#: ../qml/pages/SettingsPage.qml:60
+#: ../qml/pages/SettingsPage.qml:65
 msgid ""
 "In order to use the Pl@ntNet plant identification service, it is necessary "
 "to register at their website as developer and obtain an API-Key. This key "
 "needs to be configured within this app.\n"
 "\n"
-"Please visit https://my.plantnet.org/signup and create an account. "
-"Afterwards visit https://my.plantnet.org/account and click the eye-symbol at "
-"the very top (\"my API key\") to show the API-Key. Copy this key and paste "
-"it into the below text input field."
+"Please visit <a href=\"https://my.plantnet.org/signup\">https://my.plantnet."
+"org/signup</a> and create a developer account. Afterwards visit <a href="
+"\"https://my.plantnet.org/account\">https://my.plantnet.org/account</a> and "
+"click the eye-symbol at the very top (\"my API key\") to show the API-Key. "
+"Copy this key and paste it into the below text input field."
 msgstr ""
 "De Pl@ntNet-identificatiedienst vereist een api-sleutel. Deze kun je "
 "verkrijgen door je te registreren als ontwikkelaar op hun website.\n"
 "\n"
-"Open https://my.plantnet.org/signup in de browser en maak een account aan. "
-"Ga vervolgens naar https://my.plantnet.org/account en druk op het oogje "
-"bovenaan de pagina (“Mijn api-sleutel”) om de api-sleutel te tonen. Kopieer "
-"de sleutel en plak hem in onderstaand veld."
+"Open <a href=\"https://my.plantnet.org/signup\">https://my.plantnet.org/"
+"signup</a> in de browser en maak een account aan. Ga vervolgens naar <a href="
+"\"https://my.plantnet.org/account\">https://my.plantnet.org/account</a> en "
+"druk op het oogje bovenaan de pagina (“Mijn api-sleutel”) om de api-sleutel "
+"te tonen. Kopieer de sleutel en plak hem in onderstaand veld."
 
-#: ../qml/pages/SettingsPage.qml:77
+#: ../qml/pages/SettingsPage.qml:83
 msgid "API-Key:"
 msgstr "Api-sleutel:"
 
-#: ../qml/pages/SettingsPage.qml:89
+#: ../qml/pages/SettingsPage.qml:95
 msgid "Enter API-Key"
 msgstr "Voer de api-sleutel in"
 
-#: ../qml/pages/SettingsPage.qml:97
+#: ../qml/pages/SettingsPage.qml:112
 msgid "Save"
 msgstr "Opslaan"
 

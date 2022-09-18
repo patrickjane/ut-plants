@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-15 10:16+0000\n"
-"PO-Revision-Date: 2022-09-11 17:15+0200\n"
+"POT-Creation-Date: 2022-09-18 08:40+0000\n"
+"PO-Revision-Date: 2022-09-18 10:43+0200\n"
 "Last-Translator: Anne 017 <anneonyme017@openmailbox.org>\n"
 "Language-Team: French < >\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: ../qml/pages/ImportPage.qml:13
 msgid "Load image"
@@ -139,40 +140,43 @@ msgstr "Le résultat n'a pas pu être enregistré (%1)."
 msgid "Settings"
 msgstr "Paramètres"
 
-#: ../qml/pages/SettingsPage.qml:44
+#: ../qml/pages/SettingsPage.qml:48
 msgid "Pl@ntNet API key"
 msgstr "Clé d'API de Pl@ntNet"
 
-#: ../qml/pages/SettingsPage.qml:60
+#: ../qml/pages/SettingsPage.qml:65
 msgid ""
 "In order to use the Pl@ntNet plant identification service, it is necessary "
 "to register at their website as developer and obtain an API-Key. This key "
 "needs to be configured within this app.\n"
 "\n"
-"Please visit https://my.plantnet.org/signup and create an account. "
-"Afterwards visit https://my.plantnet.org/account and click the eye-symbol at "
-"the very top (\"my API key\") to show the API-Key. Copy this key and paste "
-"it into the below text input field."
+"Please visit <a href=\"https://my.plantnet.org/signup\">https://my.plantnet."
+"org/signup</a> and create a developer account. Afterwards visit <a href="
+"\"https://my.plantnet.org/account\">https://my.plantnet.org/account</a> and "
+"click the eye-symbol at the very top (\"my API key\") to show the API-Key. "
+"Copy this key and paste it into the below text input field."
 msgstr ""
 "Afin d'utiliser le service d'identification des plantes Pl@ntNet, il est "
 "nécessaire de s'enregistrer sur leur site internet en tant que développeur "
 "et d'obtenir une clé d'API. Cette clé doit être configurée dans cette "
 "application.\n"
 "\n"
-"Veuillez visiter https://my.plantnet.org/signup et créer un compte. Ensuite, "
-"visitez https://my.plantnet.org/account et cliquez sur le symbole en forme "
-"d'œil tout en haut (« ma clé d'API ») pour afficher la clé d'API. Copiez "
-"cette clé et collez-la dans le champ de saisie de texte ci-dessous."
+"Veuillez visiter <a href=\"https://my.plantnet.org/signup\">https://my."
+"plantnet.org/signup</a> et créer un compte. Ensuite, visitez <a href="
+"\"https://my.plantnet.org/account\">https://my.plantnet.org/account</a> et "
+"cliquez sur le symbole en forme d'œil tout en haut (« ma clé d'API ») pour "
+"afficher la clé d'API. Copiez cette clé et collez-la dans le champ de saisie "
+"de texte ci-dessous."
 
-#: ../qml/pages/SettingsPage.qml:77
+#: ../qml/pages/SettingsPage.qml:83
 msgid "API-Key:"
 msgstr "Clé d'API :"
 
-#: ../qml/pages/SettingsPage.qml:89
+#: ../qml/pages/SettingsPage.qml:95
 msgid "Enter API-Key"
 msgstr "Saisissez la clé d'API"
 
-#: ../qml/pages/SettingsPage.qml:97
+#: ../qml/pages/SettingsPage.qml:112
 msgid "Save"
 msgstr "Enregistrer"
 

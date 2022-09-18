@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-15 10:16+0000\n"
+"POT-Creation-Date: 2022-09-18 08:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,31 +128,32 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:44
+#: ../qml/pages/SettingsPage.qml:48
 msgid "Pl@ntNet API key"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:60
+#: ../qml/pages/SettingsPage.qml:65
 msgid ""
 "In order to use the Pl@ntNet plant identification service, it is necessary "
 "to register at their website as developer and obtain an API-Key. This key "
 "needs to be configured within this app.\n"
 "\n"
-"Please visit https://my.plantnet.org/signup and create an account. "
-"Afterwards visit https://my.plantnet.org/account and click the eye-symbol at "
-"the very top (\"my API key\") to show the API-Key. Copy this key and paste "
-"it into the below text input field."
+"Please visit <a href=\"https://my.plantnet.org/signup\">https://my.plantnet."
+"org/signup</a> and create a developer account. Afterwards visit <a href="
+"\"https://my.plantnet.org/account\">https://my.plantnet.org/account</a> and "
+"click the eye-symbol at the very top (\"my API key\") to show the API-Key. "
+"Copy this key and paste it into the below text input field."
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:77
+#: ../qml/pages/SettingsPage.qml:83
 msgid "API-Key:"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:89
+#: ../qml/pages/SettingsPage.qml:95
 msgid "Enter API-Key"
 msgstr ""
 
-#: ../qml/pages/SettingsPage.qml:97
+#: ../qml/pages/SettingsPage.qml:112
 msgid "Save"
 msgstr ""
 
