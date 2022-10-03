@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-18 08:40+0000\n"
-"PO-Revision-Date: 2022-09-18 10:43+0200\n"
+"POT-Creation-Date: 2022-10-03 12:16+0000\n"
+"PO-Revision-Date: 2022-10-03 14:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -135,15 +135,15 @@ msgstr "Speichern fehlgeschlagen"
 msgid "Result could not be saved (%1)."
 msgstr "Ergebnis konnte nicht gespeichert werden (%1)."
 
-#: ../qml/pages/SettingsPage.qml:21
+#: ../qml/pages/SettingsPage.qml:22
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: ../qml/pages/SettingsPage.qml:48
+#: ../qml/pages/SettingsPage.qml:49
 msgid "Pl@ntNet API key"
 msgstr "Pl@ntNet API-Schlüssel"
 
-#: ../qml/pages/SettingsPage.qml:65
+#: ../qml/pages/SettingsPage.qml:66
 msgid ""
 "In order to use the Pl@ntNet plant identification service, it is necessary "
 "to register at their website as developer and obtain an API-Key. This key "
@@ -166,17 +166,21 @@ msgstr ""
 "ganz oben mit dem \"Augen-Symbol\" den API-Schlüssel anzeigen lassen. Dieser "
 "kann dann in das unten stehende Eingabefeld kopiert werden."
 
-#: ../qml/pages/SettingsPage.qml:83
+#: ../qml/pages/SettingsPage.qml:84
 msgid "API-Key:"
 msgstr "API-Schlüssel:"
 
-#: ../qml/pages/SettingsPage.qml:95
+#: ../qml/pages/SettingsPage.qml:96
 msgid "Enter API-Key"
 msgstr "API-Schlüssel eingeben"
 
-#: ../qml/pages/SettingsPage.qml:112
+#: ../qml/pages/SettingsPage.qml:113
 msgid "Save"
 msgstr "Speichern"
+
+#: ../qml/pages/SettingsPage.qml:134
+msgid "Keep display on while using the app"
+msgstr "Display beim Verwenden der App eingeschaltet lassen"
 
 #: ../qml/util/Dialogs.qml:17 ../qml/util/Dialogs.qml:83
 msgid "Okay"

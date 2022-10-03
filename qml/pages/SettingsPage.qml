@@ -14,6 +14,7 @@ Page {
    Settings {
       id: settings
       property string apiKey
+      property bool keepDisplayOn
    }
 
    header: PageHeader {
@@ -116,6 +117,30 @@ Page {
                            pageStack.pop()
                         }
                      }
+                  }
+               }
+            }
+         }
+
+         ListItem {
+            anchors.left: parent.left
+            anchors.right: parent.right
+            height: l5.height + (divider.visible ? divider.height : 0)
+
+            SlotsLayout {
+               id: l5
+               mainSlot: Text {
+                  anchors.verticalCenter: parent.verticalCenter
+                  text: i18n.tr("Keep display on while using the app")
+                  color: Theme.palette.normal.baseText
+                  wrapMode: Text.WordWrap
+               }
+               Switch {
+                  checked: settings.keepDisplayOn
+                  SlotsLayout.position: SlotsLayout.Trailing
+
+                  onClicked: {
+                     settings.keepDisplayOn = checked
                   }
                }
             }

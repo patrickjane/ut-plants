@@ -1,4 +1,4 @@
 {
-    "policy_groups": ["content_exchange", "networking"],
+    "policy_groups": ["content_exchange", "networking", "keep-display-on"],
     "policy_version": 16.04
 }
