@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-03 12:16+0000\n"
-"PO-Revision-Date: 2022-10-03 14:18+0200\n"
+"POT-Creation-Date: 2023-01-28 18:37+0000\n"
+"PO-Revision-Date: 2023-01-28 19:38+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: ../qml/pages/ImportPage.qml:13
 msgid "Load image"
@@ -182,7 +182,7 @@ msgstr "Speichern"
 msgid "Keep display on while using the app"
 msgstr "Display beim Verwenden der App eingeschaltet lassen"
 
-#: ../qml/util/Dialogs.qml:17 ../qml/util/Dialogs.qml:83
+#: ../qml/util/Dialogs.qml:17
 msgid "Okay"
 msgstr "Okay"
 
@@ -193,6 +193,10 @@ msgstr "Schließen"
 #: ../qml/util/Dialogs.qml:70
 msgid "Select plant part"
 msgstr "Pflanzenteil auswählen"
+
+#: ../qml/util/Dialogs.qml:83
+msgid "Select"
+msgstr "Auswählen"
 
 #: ../qml/util/Disclaimer.qml:50
 msgid ""

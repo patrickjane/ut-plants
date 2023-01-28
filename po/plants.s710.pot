@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-03 12:22+0000\n"
+"POT-Creation-Date: 2023-01-28 18:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,7 +161,7 @@ msgstr ""
 msgid "Keep display on while using the app"
 msgstr ""
 
-#: ../qml/util/Dialogs.qml:17 ../qml/util/Dialogs.qml:83
+#: ../qml/util/Dialogs.qml:17
 msgid "Okay"
 msgstr ""
 
@@ -171,6 +171,10 @@ msgstr ""
 
 #: ../qml/util/Dialogs.qml:70
 msgid "Select plant part"
+msgstr ""
+
+#: ../qml/util/Dialogs.qml:83
+msgid "Select"
 msgstr ""
 
 #: ../qml/util/Disclaimer.qml:50

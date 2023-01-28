@@ -80,7 +80,7 @@ Item {
          }
 
          Button {
-            text: i18n.tr("Okay")
+            text: i18n.tr("Select")
             color: acceptButtonColor
             onClicked: {
                pickerDialog.accepted()

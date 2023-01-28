@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-18 08:40+0000\n"
-"PO-Revision-Date: 2022-09-18 10:44+0200\n"
+"POT-Creation-Date: 2023-01-28 18:37+0000\n"
+"PO-Revision-Date: 2023-01-28 19:39+0100\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: ../qml/pages/ImportPage.qml:13
 msgid "Load image"
@@ -132,15 +132,15 @@ msgstr "Bewaren mislukt"
 msgid "Result could not be saved (%1)."
 msgstr "De resultaten kunnen niet worden bewaard (%1)."
 
-#: ../qml/pages/SettingsPage.qml:21
+#: ../qml/pages/SettingsPage.qml:22
 msgid "Settings"
 msgstr "Instellingen"
 
-#: ../qml/pages/SettingsPage.qml:48
+#: ../qml/pages/SettingsPage.qml:49
 msgid "Pl@ntNet API key"
 msgstr "Pl@ntNet-api-sleutel"
 
-#: ../qml/pages/SettingsPage.qml:65
+#: ../qml/pages/SettingsPage.qml:66
 msgid ""
 "In order to use the Pl@ntNet plant identification service, it is necessary "
 "to register at their website as developer and obtain an API-Key. This key "
@@ -161,19 +161,23 @@ msgstr ""
 "druk op het oogje bovenaan de pagina (“Mijn api-sleutel”) om de api-sleutel "
 "te tonen. Kopieer de sleutel en plak hem in onderstaand veld."
 
-#: ../qml/pages/SettingsPage.qml:83
+#: ../qml/pages/SettingsPage.qml:84
 msgid "API-Key:"
 msgstr "Api-sleutel:"
 
-#: ../qml/pages/SettingsPage.qml:95
+#: ../qml/pages/SettingsPage.qml:96
 msgid "Enter API-Key"
 msgstr "Voer de api-sleutel in"
 
-#: ../qml/pages/SettingsPage.qml:112
+#: ../qml/pages/SettingsPage.qml:113
 msgid "Save"
 msgstr "Opslaan"
 
-#: ../qml/util/Dialogs.qml:17 ../qml/util/Dialogs.qml:83
+#: ../qml/pages/SettingsPage.qml:134
+msgid "Keep display on while using the app"
+msgstr ""
+
+#: ../qml/util/Dialogs.qml:17
 msgid "Okay"
 msgstr "Oké"
 
@@ -184,6 +188,10 @@ msgstr "Sluiten"
 #: ../qml/util/Dialogs.qml:70
 msgid "Select plant part"
 msgstr "Deel van plant selecteren"
+
+#: ../qml/util/Dialogs.qml:83
+msgid "Select"
+msgstr "Selecteer"
 
 #: ../qml/util/Disclaimer.qml:50
 msgid ""

@@ -1,0 +1,4 @@
+clickable_minimum_required: 7.11.0
+builder: cmake
+kill: "Plants"
+
