@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plants.s710\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-28 18:52+0000\n"
+"POT-Creation-Date: 2023-01-29 20:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -233,78 +233,78 @@ msgstr ""
 msgid "Bark"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:57
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:57
 msgid "No source images in identification result"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:71
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:71
 msgid "Own photo"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:77
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:77
 msgid "Failed to save source images for plant: "
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:98
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:102
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:98
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:102
 msgid "Failed to save plant JSON: "
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:120
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:120
 msgid "Failed to open plant JSON: "
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:126
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:126
 msgid "Failed to open plant JSON #2: "
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:143
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:143
 msgid "Failed to read plant JSON: "
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:148
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:148
 msgid "Unexpected/malformed plant JSON #1"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:154
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:154
 msgid "Unexpected/malformed plant JSON #2"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:173
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:173
 msgid "Unexpected/malformed plant JSON #3"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:192
-#: /home/s710/Development/ubuntu-touch/Plants/src/plant.cpp:198
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:192
+#: /home/blaubaer/Forks/ut-plants/src/plant.cpp:198
 msgid "Failed to open plant image: "
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:61
+#: /home/blaubaer/Forks/ut-plants/src/plantsmodel.cpp:61
 msgid "Failed to determine writable app data storage location"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:70
+#: /home/blaubaer/Forks/ut-plants/src/plantsmodel.cpp:70
 msgid "App data storage location inaccessible"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:71
+#: /home/blaubaer/Forks/ut-plants/src/plantsmodel.cpp:71
 msgid "can't create subfolder:"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:184
+#: /home/blaubaer/Forks/ut-plants/src/plantsmodel.cpp:184
 msgid "Failed to save plant"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:208
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:214
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:231
+#: /home/blaubaer/Forks/ut-plants/src/plantsmodel.cpp:208
+#: /home/blaubaer/Forks/ut-plants/src/plantsmodel.cpp:214
+#: /home/blaubaer/Forks/ut-plants/src/plantsmodel.cpp:231
 msgid "Failed to delete plant (plant unknown)"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:219
+#: /home/blaubaer/Forks/ut-plants/src/plantsmodel.cpp:219
 msgid "Failed to delete plant from storage directory (%1)"
 msgstr ""
 
-#: /home/s710/Development/ubuntu-touch/Plants/src/plantsmodel.cpp:236
+#: /home/blaubaer/Forks/ut-plants/src/plantsmodel.cpp:236
 msgid "Failed to delete plant image from storage directory (%1)"
 msgstr ""

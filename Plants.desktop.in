@@ -4,4 +4,4 @@ Exec=Plants %U
 Icon=assets/logo.png
 Terminal=false
 Type=Application
-X-Ubuntu-Touch=true
+X-Lomiri-Touch=true

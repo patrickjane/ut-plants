@@ -1,7 +1,7 @@
 import QtQuick 2.7
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import QtQuick.Layouts 1.3
-import Ubuntu.Content 1.1
+import Lomiri.Content 1.1
 import QtGraphicalEffects 1.12
 import QtQuick.Controls 2.5 as QC
 import Qt.labs.settings 1.0
@@ -167,7 +167,7 @@ Page {
                         root, i18n.tr("Delete plant?"), i18n.tr(
                            "Shall the plant '%1' be deleted? This operation can not be undone.").arg(
                            plant.species), i18n.tr("Delete"),
-                        i18n.tr("Cancel"), UbuntuColors.red)
+                        i18n.tr("Cancel"), LomiriColors.red)
 
                dialog.accepted.connect(function () {
                   var err = plantsModel.deletePlant(plantID)

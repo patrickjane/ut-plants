@@ -1,7 +1,7 @@
 import QtQuick 2.7
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import QtQuick.Layouts 1.3
-import Ubuntu.Content 1.1
+import Lomiri.Content 1.1
 import QtQuick.Controls 2.5 as QC
 
 import "../util"
@@ -87,7 +87,7 @@ Item {
                   font.bold: true
 
                   color: scoreValue > 80 ? "white" : (scoreValue
-                                                      > 50 ? UbuntuColors.orange : UbuntuColors.red)
+                                                      > 50 ? LomiriColors.orange : LomiriColors.red)
                }
             }
          }
