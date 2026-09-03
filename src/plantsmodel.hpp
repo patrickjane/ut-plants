@@ -109,6 +109,10 @@ public:
    Q_INVOKABLE QString deletePlant(QString id);
    Q_INVOKABLE void identifyPlant(QVariantList request);
 
+   Q_INVOKABLE QString setPlantTags(QString id, QStringList tags);
+   Q_INVOKABLE QVariantList allPlants() const;
+   Q_INVOKABLE QStringList allTags() const;
+
    Plant* getPlant(QString id)
    {
       return mItemMap.count(id) ? mItemMap[id] : nullptr;

@@ -87,6 +87,7 @@ PlantResult Plants::createPlant(QVariantMap& identificationResult)
 
    identificationResult["images"] = newImages;
    identificationResult["added"] = QDateTime::currentDateTime().toString(Qt::ISODate);
+   identificationResult["tags"] = QVariantList();
    identificationResult.remove("sourceImages"); // temp paths, already copied above; not read again
 
    QByteArray jsonData
@@ -214,6 +215,55 @@ PlantResult Plants::_openPlant(QByteArray jsonData)
    plant->images = images;
    plant->added = QDateTime::fromString(parsed["added"].toString(), Qt::ISODate);
 
+   QStringList tags;
+
+   foreach (auto tag, parsed["tags"].toArray())
+      tags << tag.toString();
+
+   plant->tags = tags;
+
    return PlantResult{plant, ""};
+}
+
+// **************************************************************************
+// updatePlantTags
+// **************************************************************************
+
+QString Plants::updatePlantTags(QString id, QStringList tags)
+{
+   QString jsonPath = storageDir.filePath(QString("%1.json").arg(id));
+   QFile jsonFile(jsonPath);
+
+   if (!jsonFile.open(QIODevice::ReadOnly))
+      return C::gettext("Failed to open plant JSON: ") + jsonFile.errorString();
+
+   QByteArray jsonData = jsonFile.readAll();
+   jsonFile.close();
+
+   if (jsonData.isEmpty())
+      return C::gettext("Failed to open plant JSON: ") + jsonFile.errorString();
+
+   QJsonParseError err;
+   QJsonDocument doc = QJsonDocument::fromJson(jsonData, &err);
+
+   if (err.error != QJsonParseError::NoError)
+      return C::gettext("Failed to read plant JSON: ") + err.errorString();
+
+   QJsonObject parsed = (!doc.isNull() && doc.isObject()) ? doc.object() : QJsonObject();
+
+   if (parsed.isEmpty())
+      return C::gettext("Unexpected/malformed plant JSON #1");
+
+   parsed["tags"] = QJsonArray::fromStringList(tags);
+
+   if (!jsonFile.open(QIODevice::WriteOnly | QIODevice::Truncate))
+      return C::gettext("Failed to save plant JSON: ") + jsonFile.errorString();
+
+   if (!jsonFile.write(QJsonDocument(parsed).toJson(QJsonDocument::Compact)))
+      return C::gettext("Failed to save plant JSON: ") + jsonFile.errorString();
+
+   jsonFile.close();
+
+   return "";
 }
 } // namespace plants

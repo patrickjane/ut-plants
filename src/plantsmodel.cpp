@@ -22,6 +22,7 @@
 #include "plantsmodel.hpp"
 
 #include <QDebug>
+#include <QSet>
 #include <QStandardPaths>
 #include <QUuid>
 
@@ -259,6 +260,64 @@ QString PlantsModel::deletePlant(QString id)
 void PlantsModel::identifyPlant(QVariantList request)
 {
    identificator.identifyPlant(request);
+}
+
+// **************************************************************************
+// setPlantTags
+// **************************************************************************
+
+QString PlantsModel::setPlantTags(QString id, QStringList tags)
+{
+   if (!mItemMap.count(id))
+      return C::gettext("Failed to update plant (plant unknown)");
+
+   QString err = plants.updatePlantTags(id, tags);
+
+   if (!err.isEmpty())
+      return err;
+
+   beginResetModel();
+   mItemMap[id]->tags = tags;
+   endResetModel();
+
+   // no row was added/removed, but QML bindings relying on "count" as a generic
+   // change-notification for this model (e.g. filtered/derived plant lists) need
+   // a signal to know the underlying data changed.
+   emit countChanged();
+
+   return "";
+}
+
+// **************************************************************************
+// allPlants
+// **************************************************************************
+
+QVariantList PlantsModel::allPlants() const
+{
+   QVariantList result;
+
+   for (auto plant : mItems)
+      result << static_cast<QVariant>(*plant);
+
+   return result;
+}
+
+// **************************************************************************
+// allTags
+// **************************************************************************
+
+QStringList PlantsModel::allTags() const
+{
+   QSet<QString> tags;
+
+   for (auto plant : mItems)
+      for (const QString& tag : plant->tags)
+         tags.insert(tag);
+
+   QStringList result = tags.toList();
+   result.sort(Qt::CaseInsensitive);
+
+   return result;
 }
 
 } // namespace plants

@@ -15,6 +15,7 @@
         <file>util/PlantItem.qml</file>
         <file>util/LoadingScreen.qml</file>
         <file>util/Toast.qml</file>
+        <file>util/TagChip.qml</file>
         <file>util/qmldir</file>
     </qresource>
 </RCC>

@@ -20,7 +20,7 @@ Rectangle {
    property bool placeholder: false
    property double spacing: units.gu(1)
 
-   width: parent.width
+   width: parent ? parent.width : 0
    height: units.gu(8)
    radius: 10
    color: placeholder ? "white" : "#669900"

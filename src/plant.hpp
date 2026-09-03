@@ -46,6 +46,7 @@ struct Plant
    QVariantList images;
    QDateTime added;
    QImage thumbnail;
+   QStringList tags;
 
    explicit operator QVariant() const
    {
@@ -56,6 +57,7 @@ struct Plant
       m.insert("score", score);
       m.insert("images", images);
       m.insert("added", added);
+      m.insert("tags", tags);
       return m;
    }
 };
@@ -77,6 +79,7 @@ public:
 
    PlantResult openPlant(QString filePath);
    PlantResult createPlant(QVariantMap& identificationResult);
+   QString updatePlantTags(QString id, QStringList tags);
 
 protected:
    PlantResult _openPlant(QByteArray jsonData);
